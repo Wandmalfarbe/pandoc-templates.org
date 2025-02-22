@@ -66,7 +66,7 @@ function handleFilter() {
         .filter(checkbox => checkbox.checked)
         .map(checkbox => checkbox.getAttribute("id"));
 
-    shuffleInstance.filter((pandocTheme, shuffle) => {
+    shuffleInstance.filter((pandocTheme) => {
         const title = pandocTheme.dataset.title.toLowerCase().trim();
         const description = pandocTheme.dataset.description.toLowerCase().trim();
         const formats = pandocTheme.dataset.formats ? pandocTheme.dataset.formats.toLowerCase().trim() : "";
@@ -77,5 +77,10 @@ function handleFilter() {
         const hasFormats = containsAll(pandocTheme.dataset.formats.trim().split(' '), filterFormats);
 
         return (title.includes(searchText) || description.includes(searchText) || formats.includes(searchText) || tags.includes(searchText)) && hasFormats;
+    });
+
+    shuffleInstance.on(Shuffle.EventType.LAYOUT, (data) => {
+        console.log(data.shuffle.visibleItems);
+        document.getElementById("filtered-items").innerHTML = data.shuffle.visibleItems;
     });
 }

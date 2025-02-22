@@ -29,7 +29,7 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
         <a class="navbar-brand" href="http://pandoc-templates.org">
-            <img src="./img/favicon.svg" alt="Bootstrap" width="24" height="24" class="logo">
+            <img src="./img/favicon.svg" alt="Pandoc Templates" width="24" height="24" class="logo">
             Pandoc Templates
         </a>
     </div>
@@ -62,13 +62,14 @@
                 </div>
             </div>
         </div>
+        <p class="text-body-secondary mb-0"><span id="filtered-items">{{total_templates}}</span> Results</p>
     </form>
 
 </div>
 
 <div class="container-fluid pt-2" role="main">
 
-    <div id="gallery" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-4 row-cols-xxl-5 g-3 mb-3">
+    <div id="gallery" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-4 row-cols-xxl-5 g-3">
         {{#templates}}
             <div class="col"
                  data-title="{{title}}"
@@ -134,6 +135,23 @@
         {{/templates}}
     </div>
     <div class="sizer"></div>
+</div>
+
+<div class="container-fluid">
+    <footer class="text-body-secondary d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center mb-2">
+            <img src="./img/favicon.svg" alt="Pandoc Templates" width="24" height="24" class="me-2"> Made by Pascal Wagler
+        </div>
+
+        <ul class="nav justify-content-md-end list-unstyled d-flex ms-md-3 mb-2">
+            <li>Last Update: <span>{{#toHumanReadable}}{{last_update_site}}{{/toHumanReadable}}</span></li>
+            <li class="ms-3">
+                <a target="_blank" rel="noopener noreferrer" class="text-decoration-none text-body-secondary" href="https://github.com/Wandmalfarbe/pandoc-templates.org">
+                    <i class="bi-github"></i> GitHub
+                </a>
+            </li>
+        </ul>
+    </footer>
 </div>
 
 <script type="text/javascript" src="./js/shuffle.js"></script>

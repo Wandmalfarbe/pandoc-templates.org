@@ -14,6 +14,8 @@ let dateOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numer
 const templateData = {
     "templates": templates,
     "formats": formats,
+    "last_update_site": new Date(),
+    "total_templates": templates.length,
     "timeAgo": function () {
         return function (dateText, render) {
             let dateString = render(dateText);
