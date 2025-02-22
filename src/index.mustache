@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pandoc Templates</title>
+
+    <link rel="fluid-icon" href="./img/favicon.png" title="Pandoc Templates">
+    <link rel="alternate icon" type="./image/png" href="./img/favicon.png">
+    <link rel="icon" type="image/svg+xml" href="./img/favicon.svg">
+    <link rel="apple-touch-icon" href="./img/favicon.png">
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/custom.css">
+
+    <meta name="description" content="Pandoc templates for PDF, LaTeX, HTML and Word. Easily convert documents with customizable templates for reports, articles, and more.">
+    <meta name="keywords" content="pandoc, template, LaTeX, HTML, PDF, Word, DOCX, report, thesis, article, dissertation, resume">
+
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:title" content="Pandoc Templates">
+    <meta property="og:description" content="Pandoc templates for PDF, LaTeX, HTML and Word. Easily convert documents with customizable templates for reports, articles, and more.">
+    <meta property="og:url" content="http://pandoc-templates.org">
+    <meta property="og:type" content="website">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="http://pandoc-templates.org">
+            <img src="./img/favicon.svg" alt="Bootstrap" width="24" height="24" class="logo">
+            Pandoc Templates
+        </a>
+    </div>
+</nav>
+
+<div class="container-fluid filter mb-2 pt-2 pb-3" role="region">
+
+    <form class="row gy-2 gx-3 align-items-center">
+        <div class="col-auto">
+            <label for="sort" class="form-label">Sort By</label>
+            <select id="sort" class="form-select" aria-label="Default select example">
+                <option selected value="">Default</option>
+                <option value="title">Title</option>
+                <option value="stars">Stars</option>
+                <option value="last-update">Last Update</option>
+            </select>
+        </div>
+        <div class="col-auto" role="search">
+            <label for="search" class="form-label">Search</label>
+            <input id="search" class="form-control" type="search">
+        </div>
+        <div class="col-auto col-formats">
+            <label class="form-label">Formats</label>
+            <div class="d-block">
+                <div class="btn-group formats" role="group">
+                    {{#formats}}
+                        <input type="checkbox" class="btn-check format-checkbox" id="{{id}}" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="{{id}}">{{name}}</label>
+                    {{/formats}}
+                </div>
+            </div>
+        </div>
+    </form>
+
+</div>
+
+<div class="container-fluid pt-2" role="main">
+
+    <div id="gallery" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-4 row-cols-xxl-5 g-3 mb-3">
+        {{#templates}}
+            <div class="col"
+                 data-title="{{title}}"
+                 data-description="{{description}}"
+                 data-stars="{{github_repository_json.stargazers_count}}"
+                 data-last-update="{{#toTimestamp}}{{github_repository_json.pushed_at}}{{/toTimestamp}}"
+                 data-tags="{{tags}}"
+                 data-formats="{{#formats}}{{id}} {{/formats}}">
+                <div class="card shadow-sm">
+                    <div class="ratio ratio-A4">
+                        {{#images.0.file}}
+                            <img loading="lazy" class="card-img-top object-fit-contain" src="./data/files/{{id}}/{{images.0.file}}"{{#images.0.title}} alt="{{images.0.title}}"{{/images.0.title}}{{^images.0.title}} alt="Preview"{{/images.0.title}}>
+                        {{/images.0.file}}
+                        {{^images.0.file}}
+                            <img loading="lazy" class="card-img-top object-fit-contain" src="./data/files/placeholder/placeholder.jpg" alt="Placeholder">
+                        {{/images.0.file}}
+                    </div>
+                    <div class="card-body overflow-fadeout overflow-hidden">
+                        <div class="ratio ratio-4x3">
+                            <div>
+                                {{#icon}}
+                                    <img class="icon" src="./data/files/{{id}}/{{icon}}" alt="Icon">
+                                {{/icon}}
+                                {{#github_repository_json.archived}}
+                                <span class="badge text-bg-warning">Archived</span>
+                                {{/github_repository_json.archived}}
+                                <h5 class="card-title">{{title}}</h5>
+                                <h6 class="card-subtitle mb-3 text-body-secondary">
+                                    {{#authors}}<span class="author">{{github.username}} ({{name}})</span>{{/authors}}
+                                </h6>
+                                <p class="card-text">{{description}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="text-end">
+                            {{#formats}}<span class="badge text-bg-secondary format-{{id}}">{{name}}</span>{{/formats}}
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center gap-2">
+                            <div class="btn-group">
+                                {{#github_repository_json.html_url}}
+                                    <a target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-secondary" href="{{{.}}}"><i class="bi-github"></i> GitHub</a>
+                                {{/github_repository_json.html_url}}
+                                {{#website}}
+                                    <a target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-secondary" href="{{{.}}}"><i class="bi-globe"></i> Website</a>
+                                {{/website}}
+                            </div>
+                            {{#github_repository_json.stargazers_count}}
+                                <small class="text-body-secondary text-end">{{github_repository_json.stargazers_count}} Stars</small>
+                            {{/github_repository_json.stargazers_count}}
+                        </div>
+                    </div>
+                    <div class="card-footer text-body-secondary justify-content-between">Last Update:
+                        {{#github_repository_json.pushed_at}}
+                            <span title="{{#toHumanReadable}}{{github_repository_json.pushed_at}}{{/toHumanReadable}}" class="{{#cssClassTimeAgo}}{{github_repository_json.pushed_at}}{{/cssClassTimeAgo}}">{{#timeAgo}}{{github_repository_json.pushed_at}}{{/timeAgo}}</span>
+                        {{/github_repository_json.pushed_at}}
+                        {{#last_update}}
+                            <span title="{{#toHumanReadable}}{{last_update}}{{/toHumanReadable}}" class="{{#cssClassTimeAgo}}{{last_update}}{{/cssClassTimeAgo}}">{{#timeAgo}}{{last_update}}{{/timeAgo}}</span>
+                        {{/last_update}}
+                    </div>
+                </div>
+            </div>
+        {{/templates}}
+    </div>
+    <div class="sizer"></div>
+</div>
+
+<script type="text/javascript" src="./js/shuffle.js"></script>
+<script type="text/javascript" src="./js/sort-and-filter.js"></script>
+</body>
+</html>

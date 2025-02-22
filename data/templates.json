@@ -1,0 +1,1407 @@
+[
+  {
+    "id": "eisvogel",
+    "title": "Eisvogel",
+    "authors": [
+      {
+        "name": "Pascal Wagler",
+        "github": {
+          "username": "Wandmalfarbe"
+        }
+      }
+    ],
+    "description": "A clean pandoc LaTeX template to convert your markdown files to PDF or LaTeX. It is designed for lecture notes and exercises with a focus on computer science. The template is compatible with pandoc 3.",
+    "formats": [
+      "pdf",
+      "latex"
+    ],
+    "icon": "eisvogel-icon.png",
+    "images": [
+      {
+        "file": "preview.png",
+        "title": "Preview 1"
+      },
+      {
+        "file": "preview2.png",
+        "title": "Preview 2"
+      }
+    ],
+    "pandoc_version": "3",
+    "github_repository": "Wandmalfarbe/pandoc-latex-template",
+    "example_url": "Wandmalfarbe/pandoc-latex-template/tree/master/examples"
+  },
+  {
+    "id": "pandoc-letter",
+    "title": "pandoc-letter",
+    "authors": [
+      {
+        "name": "Aaron Wolen",
+        "url": "https://www.aaronwolen.com/",
+        "github": {
+          "username": "aaronwolen"
+        }
+      },
+      {
+        "name": "Andrew Dunning",
+        "url": "http://andrewdunning.ca/",
+        "github": {
+          "username": "adunning"
+        }
+      }
+    ],
+    "description": "This template allows you to write letters in Markdown and convert them to nice looking PDFs using Pandoc and LaTeX. It accepts arguments used in the LaTeX letter class.",
+    "formats": [
+      "latex"
+    ],
+    "images": [
+      {
+        "file": "preview.png",
+        "title": "Preview 1"
+      }
+    ],
+    "github_repository": "aaronwolen/pandoc-letter",
+    "example_url": "aaronwolen/pandoc-letter/tree/master/example"
+  },
+  {
+    "id": "pandoc-resume",
+    "title": "The Markdown Resume",
+    "authors": [
+      {
+        "name": "Mark Szepieniec",
+        "github": {
+          "username": "mszep"
+        }
+      }
+    ],
+    "description": "",
+    "formats": [
+      "html",
+      "pdf"
+    ],
+    "tags": [
+      "Resume",
+      "CV",
+      "Curriculum Vitae"
+    ],
+    "images": [
+      {
+        "file": "resume.png",
+        "title": "Preview 1"
+      }
+    ],
+    "github_repository": "mszep/pandoc_resume",
+    "website": "http://mszep.github.io/pandoc_resume/",
+    "example_url": "http://mszep.github.io/pandoc_resume/"
+  },
+  {
+    "id": "pdf-slides-and-handouts-using-pandoc-and-beamer",
+    "title": "PDF slides and handouts using Pandoc and Beamer",
+    "authors": [
+      {
+        "name": "Lincoln Mullen"
+      }
+    ],
+    "description": "Files to create slides and handouts from the same Markdown files using Pandoc and a custom Beamer template.",
+    "formats": [
+      "latex",
+      "pdf"
+    ],
+    "images": [
+      {
+        "file": "beamer.png",
+        "title": "Preview 1"
+      }
+    ],
+    "last_update": "2014-08-10T09:49:00Z",
+    "website": "https://gist.github.com/lmullen/c3d4c7883f081ed8692a"
+  },
+  {
+    "id": "thesis-markdown-pandoc",
+    "title": "thesis-markdown-pandoc",
+    "authors": [
+      {
+        "name": "chiakaivalya",
+        "github": {
+          "username": "chiakaivalya"
+        }
+      }
+    ],
+    "description": "A template for creating a PhD thesis in markdown with pandoc.",
+    "formats": [
+      "latex",
+      "pdf"
+    ],
+    "images": [
+      {
+        "file": "phd-thesis.png",
+        "title": "PHD Thesis Title Page"
+      }
+    ],
+    "github_repository": "chiakaivalya/thesis-markdown-pandoc"
+  },
+  {
+    "id": "phd-thesis-markdown",
+    "title": "Template for writing a PhD thesis in Markdown",
+    "authors": [
+      {
+        "name": "Tom Pollard",
+        "github": {
+          "username": "tompollard"
+        }
+      }
+    ],
+    "description": "This repository provides a framework for writing a PhD thesis in Markdown. I used the template for my PhD submission to University College London (UCL), but it should be straightforward to adapt suit other universities too.",
+    "formats": [
+      "latex",
+      "pdf"
+    ],
+    "images": [
+      {
+        "file": "phd-thesis-markdown.png",
+        "title": "PHD Thesis Markdown Title Page"
+      }
+    ],
+    "github_repository": "tompollard/phd_thesis_markdown"
+  },
+  {
+    "id": "mla-paper-template",
+    "title": "mla_paper_template",
+    "authors": [
+      {
+        "name": "J. O. B.",
+        "github": {
+          "username": "shushcat"
+        }
+      }
+    ],
+    "description": " Generate MLA-formatted PDFs with Markdown and Pandoc.",
+    "formats": [
+      "latex",
+      "pdf"
+    ],
+    "images": [
+      {
+        "file": "mla-paper-template.png",
+        "title": "MLA Paper Template (ODT Output)"
+      }
+    ],
+    "github_repository": "shushcat/mla_paper_template"
+  },
+  {
+    "id": "pandoc-journal-templates",
+    "title": "pandoc-journal-templates",
+    "authors": [
+      {
+        "name": "Michael Sachs",
+        "github": {
+          "username": "sachsmc"
+        }
+      }
+    ],
+    "description": "Journal templates for several major journals (incl. JASA, TAS, JBES, JCGS, SBP, Technometrics, Biometrical Journal, Biometrics, Biometrika, Biostatistics, AOAS, AOP, AAP, AOS, SSY, Journal of Statistical Software, Statistics in Medicine, and The R Journal).",
+    "formats": [
+      "latex",
+      "pdf"
+    ],
+    "github_repository": "sachsmc/pandoc-journal-templates",
+    "website": "https://github.com/sachsmc/pandoc-journal-templates/wiki"
+  },
+  {
+    "id": "pandoc-thesis",
+    "title": "pandoc-thesis",
+    "authors": [
+      {
+        "name": "Carsten Gips",
+        "github": {
+          "username": "cagix"
+        }
+      }
+    ],
+    "description": "Pandoc Thesis Template: A Template for Thesis Documents written in Markdown.",
+    "formats": [
+      "latex",
+      "pdf"
+    ],
+    "images": [
+      {
+        "file": "thesis_example_cleanthesis.png",
+        "title": "Title page with the Clean Thesis template"
+      }
+    ],
+    "github_repository": "cagix/pandoc-thesis"
+  },
+  {
+    "id": "pandoc-lecture",
+    "title": "pandoc-lecture",
+    "authors": [
+      {
+        "name": "Carsten Gips",
+        "github": {
+          "username": "cagix"
+        }
+      }
+    ],
+    "description": "Pandoc Markdown Lecture Template: This project defines a skeleton repo for creating lecture slides and handouts including lecture notes out of Pandoc Markdown using a single source approach.",
+    "formats": [
+      "latex",
+      "pdf"
+    ],
+    "github_repository": "cagix/pandoc-lecture"
+  },
+  {
+    "id": "arabica",
+    "title": "arabica",
+    "authors": [
+      {
+        "name": "Martin Maga",
+        "github": {
+          "username": "periodicpoint"
+        }
+      }
+    ],
+    "description": "A sound and versatile pandoc LaTeX boilerplate to produce academic books using Markdown files featuring YAML, KOMA-Script, BibLaTeX and CSL.",
+    "formats": [
+      "latex",
+      "pdf"
+    ],
+    "images": [
+      {
+        "file": "arabica-example.png",
+        "title": "Arabica Example Page"
+      }
+    ],
+    "github_repository": "periodicpoint/arabica",
+    "example_url": "periodicpoint/arabica/tree/master/examples"
+  },
+  {
+    "id": "robusta",
+    "title": "robusta",
+    "authors": [
+      {
+        "name": "Martin Maga",
+        "github": {
+          "username": "periodicpoint"
+        }
+      }
+    ],
+    "description": "A sound and versatile pandoc LaTeX boilerplate to produce academic articles using Markdown files featuring YAML, KOMA-Script, BibLaTeX and CSL.",
+    "formats": [
+      "latex",
+      "pdf"
+    ],
+    "github_repository": "periodicpoint/robusta"
+  },
+  {
+    "id": "tufte-pandoc-css",
+    "title": "tufte-pandoc-css",
+    "authors": [
+      {
+        "name": "Jake Zimmerman",
+        "github": {
+          "username": "jez"
+        }
+      }
+    ],
+    "description": "Starter files for using Pandoc Markdown with Tufte CSS",
+    "formats": [
+      "html"
+    ],
+    "images": [
+      {
+        "file": "tufte-pandoc-css.png",
+        "title": "Tufte Pandoc CSS"
+      }
+    ],
+    "github_repository": "jez/tufte-pandoc-css",
+    "website": "https://jez.io/tufte-pandoc-css/"
+  },
+  {
+    "id": "pandoc-markdown-css-theme",
+    "title": "pandoc-markdown-css-theme",
+    "authors": [
+      {
+        "name": "Jake Zimmerman",
+        "github": {
+          "username": "jez"
+        }
+      }
+    ],
+    "description": "This project provides CSS files and a template for using Pandoc to generate standalone HTML files.",
+    "formats": [
+      "html"
+    ],
+    "images": [
+      {
+        "file": "pandoc-markdown-css-theme.png",
+        "title": "Pandoc Markdown CSS Theme.png"
+      }
+    ],
+    "github_repository": "jez/pandoc-markdown-css-theme"
+  },
+  {
+    "id": "pandoc-markdown-book-template",
+    "title": "pandoc-markdown-book-template",
+    "authors": [
+      {
+        "name": "John Paul Ada",
+        "github": {
+          "username": "johnpaulada"
+        }
+      }
+    ],
+    "description": " A template for creating epub books from markdown using pandoc.",
+    "formats": [
+      "html"
+    ],
+    "images": [
+      {
+        "file": "pandoc-markdown-book-template-chapter.png",
+        "title": "pandoc-markdown-book-template-chapter"
+      }
+    ],
+    "github_repository": "johnpaulada/pandoc-markdown-book-template"
+  },
+  {
+    "id": "academic-pandoc-template",
+    "title": "academic-pandoc-template",
+    "authors": [
+      {
+        "name": "Moritz Mähr",
+        "github": {
+          "username": "maehr"
+        }
+      }
+    ],
+    "description": "A template for creating epub books from markdown using pandoc.",
+    "formats": [
+      "html",
+      "docx",
+      "epub",
+      "pdf",
+      "pptx",
+      "latex"
+    ],
+    "images": [
+      {
+        "file": "academic-pandoc-template.png",
+        "title": "Academic Pandoc Template PDF output"
+      }
+    ],
+    "github_repository": "maehr/academic-pandoc-template"
+  },
+  {
+    "id": "nyum",
+    "title": "nyum",
+    "authors": [
+      {
+        "name": "Noah Doersing",
+        "github": {
+          "username": "doersino"
+        }
+      }
+    ],
+    "description": "A simple Pandoc-powered static site generator for your recipe collection – it effortlessly turns a set of Markdown-formatted recipes into a lightweight, responsive, searchable website.",
+    "formats": [
+      "html"
+    ],
+    "tags": [
+      "Cookbook",
+      "Recipe"
+    ],
+    "images": [
+      {
+        "file": "nyum-recipe.png",
+        "title": "Nyum recipe page"
+      }
+    ],
+    "icon": "nyum-logo.svg",
+    "github_repository": "doersino/nyum",
+    "example_url": "https://doersino.github.io/nyum/_site/index.html"
+  },
+  {
+    "id": "obsidian-pandoc-templates-dissertation-template",
+    "title": "obsidian-pandoc-templates Dissertation",
+    "authors": [
+      {
+        "name": "Leonardo Castorina",
+        "github": {
+          "username": "universvm"
+        }
+      }
+    ],
+    "description": "Dissertation template modified from the Eisvogel template.",
+    "formats": [
+      "latex",
+      "pdf"
+    ],
+    "images": [
+      {
+        "file": "dissertation.png",
+        "title": "Dissertation Template Chapter Page"
+      }
+    ],
+    "github_repository": "universvm/obsidian-pandoc-templates"
+  },
+  {
+    "id": "obsidian-pandoc-templates-neurips-template",
+    "title": "obsidian-pandoc-templates Neurips",
+    "authors": [
+      {
+        "name": "Leonardo Castorina",
+        "github": {
+          "username": "universvm"
+        }
+      }
+    ],
+    "description": "Neurips template modified from the 2023 Neurips Template.",
+    "formats": [
+      "latex",
+      "pdf"
+    ],
+    "images": [
+      {
+        "file": "neurips.png",
+        "title": "Neurips Template Title Page"
+      }
+    ],
+    "github_repository": "universvm/obsidian-pandoc-templates"
+  },
+  {
+    "id": "pandoc-toc-sidebar",
+    "title": "pandoc-toc-sidebar",
+    "authors": [
+      {
+        "name": "Mushiyo",
+        "github": {
+          "username": "Mushiyo"
+        }
+      }
+    ],
+    "description": "A Pandoc HTML template with TOC on the sidebar, using Bootstrap 3",
+    "formats": [
+      "html"
+    ],
+    "tags": [
+      "Bootstrap",
+      "Bootstrap 3"
+    ],
+    "images": [
+      {
+        "file": "pandoc-toc-sidebar-with-sidebar.png",
+        "title": "Pandoc TOC Sidebar (with Sidebar)"
+      },
+      {
+        "file": "pandoc-toc-sidebar-without-sidebar.png",
+        "title": "Pandoc TOC Sidebar (without Sidebar)"
+      }
+    ],
+    "github_repository": "Mushiyo/pandoc-toc-sidebar",
+    "website": "https://mushiyo.github.io/pandoc-toc-sidebar/"
+  },
+  {
+    "id": "markdown-pandoc-book-template",
+    "title": "markdown_pandoc_book_template",
+    "authors": [
+      {
+        "name": "Stefano Cecere",
+        "github": {
+          "username": "StefanoCecere"
+        }
+      }
+    ],
+    "description": "A template to create PDF/ePub/HTML/docx books by Markdown via Pandoc.",
+    "formats": [
+      "pdf",
+      "epub",
+      "html",
+      "docx"
+    ],
+    "tags": [
+      "Book"
+    ],
+    "images": [
+      {
+        "file": "markdown-pandoc-book-template.png",
+        "title": "Markdown Pandoc Book Template HTML Page"
+      }
+    ],
+    "github_repository": "StefanoCecere/markdown_pandoc_book_template"
+  },
+  {
+    "id": "pandoc-bootstrap-adaptive-template",
+    "title": "pandoc bootstrap adaptive template",
+    "authors": [
+      {
+        "name": "Dennis Iversen",
+        "github": {
+          "username": "diversen"
+        }
+      }
+    ],
+    "description": "An adaptive Bootstrap template with a sticky menu.",
+    "formats": [
+      "html"
+    ],
+    "tags": [
+      "Bootstrap",
+      "Bootstrap 2"
+    ],
+    "images": [
+      {
+        "file": "pandoc-bootstrap-adaptive-template.png",
+        "title": "Pandoc Bootstrap Adaptive Template"
+      }
+    ],
+    "github_repository": "diversen/pandoc-bootstrap-adaptive-template"
+  },
+  {
+    "id": "tonyblundell-pandoc-bootstrap-template",
+    "title": "pandoc-bootstrap-template",
+    "authors": [
+      {
+        "name": "Tony Blundell",
+        "github": {
+          "username": "tonyblundell"
+        }
+      }
+    ],
+    "description": "Bootstrap template for Pandoc - Converts markdown files into Twitter Bootstrap styled HTML.",
+    "formats": [
+      "html"
+    ],
+    "tags": [
+      "Bootstrap",
+      "Bootstrap 2"
+    ],
+    "images": [
+      {
+        "file": "pandoc-bootstrap-template.png",
+        "title": "Pandoc Bootstrap Template"
+      }
+    ],
+    "github_repository": "tonyblundell/pandoc-bootstrap-template"
+  },
+  {
+    "id": "keeferrourke-pandoc-cookbook",
+    "title": "Pandoc Cookbook",
+    "authors": [
+      {
+        "name": "Keefer Rourke",
+        "github": {
+          "username": "keeferrourke"
+        }
+      }
+    ],
+    "description": "A literal cookbook. Typeset with Pandoc.",
+    "formats": [
+      "pdf",
+      "latex"
+    ],
+    "tags": [
+      "Cookbook",
+      "Recipe",
+      "tufte",
+      "tufte-book"
+    ],
+    "images": [
+      {
+        "file": "pandoc-cookbook.png",
+        "title": "Pandoc Cookbook"
+      }
+    ],
+    "github_repository": "keeferrourke/pandoc-cookbook"
+  },
+  {
+    "id": "pandoc-recipe-template",
+    "title": "A Simple Recipe Template for Pandoc",
+    "authors": [
+      {
+        "name": "Isaac Wismer",
+        "github": {
+          "username": "iwismer"
+        }
+      }
+    ],
+    "description": "A simple recipe template for rendering recipes from YAML with Pandoc",
+    "formats": [
+      "latex",
+      "pdf"
+    ],
+    "tags": [
+      "Cookbook",
+      "Recipe",
+      "scrartcl"
+    ],
+    "images": [
+      {
+        "file": "pandoc-recipe-template.png",
+        "title": "Pandoc Recipe Template"
+      }
+    ],
+    "github_repository": "iwismer/pandoc-recipe-template"
+  },
+  {
+    "id": "pandoc-uikit",
+    "title": "pandoc uikit",
+    "authors": [
+      {
+        "name": "Dennis Iversen",
+        "github": {
+          "username": "diversen"
+        }
+      }
+    ],
+    "description": "A pandoc UIkit html template. Includes a sticky adaptive menu and some other nice things.",
+    "formats": [
+      "html"
+    ],
+    "tags": [
+      "UIkit",
+      "UIkit 2"
+    ],
+    "images": [
+      {
+        "file": "pandoc-uikit.png",
+        "title": "Pandoc UIkit"
+      }
+    ],
+    "github_repository": "diversen/pandoc-uikit",
+    "example_url": "http://diversen.github.io/pandoc-uikit/"
+  },
+  {
+    "id": "sgtemplates",
+    "title": "sgtemplates",
+    "authors": [
+      {
+        "name": "Miles Drake",
+        "github": {
+          "username": "miles-drake"
+        }
+      },
+      {
+        "name": "Nick Fanton",
+        "github": {
+          "username": "n-fanton"
+        }
+      }
+    ],
+    "description": "R markdown templates for data analysts working for the Scottish Government. sgtemplates lets you use RStudio to quickly produce professional, accessible, Government-branded HTML documents and websites.",
+    "formats": [
+      "html"
+    ],
+    "tags": [
+      "Digital Scotland Design System"
+    ],
+    "images": [
+      {
+        "file": "sgtemplates.png",
+        "title": "sgtemplates"
+      }
+    ],
+    "github_repository": "ScotGovAnalysis/sgtemplates"
+  },
+  {
+    "id": "nih-grant-proposal-template",
+    "title": "NIH Grant Proposal Template",
+    "authors": [
+      {
+        "name": "Cory Brunson",
+        "github": {
+          "username": "corybrunson"
+        }
+      }
+    ],
+    "description": "This template aims to simplify the grant proposal formatting process in order to allow grantwriters to concentrate more on the writing.",
+    "formats": [
+      "pdf",
+      "docx"
+    ],
+    "images": [
+      {
+        "file": "nih-grant-proposal-template.png",
+        "title": "NIH Grant Proposal Template"
+      }
+    ],
+    "github_repository": "corybrunson/NIH-proposal-template"
+  },
+  {
+    "id": "nidrissi-exam-template",
+    "title": "exam-template",
+    "authors": [
+      {
+        "name": "Najib Idrissi-Kaïtouni",
+        "github": {
+          "username": "nidrissi"
+        }
+      }
+    ],
+    "description": "A Pandoc+LaTeX template for exams.",
+    "formats": [
+      "pdf"
+    ],
+    "images": [
+      {
+        "file": "exam-template.png",
+        "title": "Exam Template"
+      }
+    ],
+    "github_repository": "nidrissi/exam-template"
+  },
+  {
+    "id": "pan-am",
+    "title": "Pan Am: Simple CSS for Pandoc",
+    "authors": [
+      {
+        "name": "Benjamin Woodruff",
+        "github": {
+          "username": "bgw"
+        }
+      },
+      {
+        "name": "Yann Esposito",
+        "github": {
+          "username": "yogsototh"
+        }
+      }
+    ],
+    "description": "This is some simple CSS for stand-alone Pandoc documents that serves as a good default. Regardless of how your compose your document, we'll make it look good.",
+    "formats": [
+      "html"
+    ],
+    "images": [
+      {
+        "file": "pan-am.png",
+        "title": "Pan Am"
+      }
+    ],
+    "github_repository": "bgw/pan-am",
+    "example_url": "https://benjam.info/panam/"
+  },
+  {
+    "id": "github-pandoc-css",
+    "title": "github-pandoc.css",
+    "authors": [
+      {
+        "name": "Alberto Leal",
+        "github": {
+          "username": "dashed"
+        }
+      }
+    ],
+    "description": " GitHub-like CSS for pandoc standalone HTML files (perfect for HTML5 output). Based on Marked.app's GitHub CSS.",
+    "formats": [
+      "html"
+    ],
+    "images": [
+      {
+        "file": "github-pandoc-css-preview.png",
+        "title": "HTML Preview"
+      }
+    ],
+    "last_update": "2013-09-26T15:42:00Z",
+    "website": "https://gist.github.com/dashed/6714393"
+  },
+  {
+    "id": "morris",
+    "title": "Morris",
+    "authors": [
+      {
+        "name": "Lucas Becker",
+        "github": {
+          "username": "runxel"
+        }
+      }
+    ],
+    "description": "Pandoc is an incredibly powerful tool – which comes at the cost of being sometimes seemingly too complex. This project aims to lower the hurdles and make document creating an easy thing. Morris provides you with everything you need to quickly generate beautiful documents from your Markdown.",
+    "formats": [
+      "html",
+      "pdf",
+      "docx",
+      "odt",
+      "icml"
+    ],
+    "tags": [
+      "Book"
+    ],
+    "images": [
+      {
+        "file": "morris.png",
+        "title": "Morris (PDF output)"
+      }
+    ],
+    "icon": "logo.png",
+    "github_repository": "runxel/morris"
+  },
+  {
+    "id": "pandoc-letter-din5008",
+    "title": "Pandoc Letter Template (Default: DIN 5008)",
+    "authors": [
+      {
+        "name": "Benedict Dudel",
+        "github": {
+          "username": "benedictdudel"
+        }
+      }
+    ],
+    "description": "Effortlessly write professional letters with the Pandoc Letter Template. Simply create and customize your letters in Markdown and convert them to stunning PDFs with one command. The template defaults to the German DIN 5008 standard for added convenience.",
+    "formats": [
+      "pdf"
+    ],
+    "tags": [
+      "Letter",
+      "Invoice",
+      "DIN 5008"
+    ],
+    "images": [
+      {
+        "file": "pandoc-letter-din5008.png",
+        "title": "Pandoc Letter Template DIN 5008 (Minimal Example)"
+      }
+    ],
+    "github_repository": "benedictdudel/pandoc-letter-din5008"
+  },
+  {
+    "id": "jottings",
+    "title": "Jottings",
+    "authors": [
+      {
+        "name": "averms",
+        "github": {
+          "username": "averms"
+        }
+      }
+    ],
+    "description": "A featherweight (4kb gzipped) theme for pandoc's html output.",
+    "formats": [
+      "html"
+    ],
+    "images": [
+      {
+        "file": "jottings.png",
+        "title": "Jottings"
+      }
+    ],
+    "github_repository": "averms/jottings",
+    "example_url": "https://averms.github.io/jottings"
+  },
+  {
+    "id": "quetzalcoatl",
+    "title": "Quetzalcoatl",
+    "authors": [
+      {
+        "name": "Ian",
+        "github": {
+          "username": "pretentiousUsername"
+        }
+      }
+    ],
+    "description": "The original pandoc template is, by most respects, passable, but not exactly great; it's mediocre at best. So, I went ahead and made a template for myself. It's nothing fancy---there isn't any beamer functionality or anything built into it, and I'm yet to define a color palette for it---but overall it's usable.",
+    "formats": [
+      "latex",
+      "pdf"
+    ],
+    "images": [
+      {
+        "file": "quetzalcoatl-demo-2.png",
+        "title": "Quetzalcoatl Demo 2"
+      }
+    ],
+    "github_repository": "pretentiousUsername/quetzalcoatl",
+    "example_url": "https://github.com/pretentiousUsername/quetzalcoatl/tree/main/demo"
+  },
+  {
+    "id": "patat",
+    "title": "patat",
+    "authors": [
+      {
+        "name": "Jasper Van der Jeugt",
+        "github": {
+          "username": "jaspervdj"
+        }
+      }
+    ],
+    "description": "patat (Presentations Atop The ANSI Terminal) is a feature-rich presentation tool that runs in the terminal.",
+    "formats": [
+      "terminal"
+    ],
+    "tags": [
+      "Terminal",
+      "Presentation",
+      "Slide"
+    ],
+    "images": [
+      {
+        "file": "patat.gif",
+        "title": "patat Demo GIF"
+      }
+    ],
+    "github_repository": "jaspervdj/patat"
+  },
+  {
+    "id": "markdeck",
+    "title": "MarkDeck",
+    "authors": [
+      {
+        "name": "Arne Hilmann",
+        "github": {
+          "username": "arnehilmann"
+        }
+      }
+    ],
+    "description": "author cool slide decks, text-only, offline-ready, collaborative",
+    "formats": [
+      "html"
+    ],
+    "tags": [
+      "Presentation",
+      "Slide"
+    ],
+    "images": [
+      {
+        "file": "markdeck-minimal.png",
+        "title": "MarkDeck Minimal"
+      }
+    ],
+    "github_repository": "arnehilmann/markdeck",
+    "example_website": "https://arnehilmann.github.io/markdeck/"
+  },
+  {
+    "id": "cv-boilerplate",
+    "title": "CV Boilerplate",
+    "authors": [
+      {
+        "name": "Mattia Tezzele",
+        "github": {
+          "username": "mrzool"
+        }
+      }
+    ],
+    "description": "A boilerplate to ease the pain of building and maintaining a CV or résumé using LaTeX.",
+    "formats": [
+      "pdf"
+    ],
+    "tags": [
+      "Resume",
+      "CV",
+      "Curriculum Vitae"
+    ],
+    "images": [
+      {
+        "file": "cv-boilerplate.png",
+        "title": "CV Boilerplate"
+      }
+    ],
+    "github_repository": "mrzool/cv-boilerplate",
+    "example_website": "https://mrzool.cc/tex-boilerplates/"
+  },
+  {
+    "id": "invoice-boilerplate",
+    "title": "Invoice Boilerplate",
+    "authors": [
+      {
+        "name": "Mattia Tezzele",
+        "github": {
+          "username": "mrzool"
+        }
+      }
+    ],
+    "description": "Simple automated LaTeX invoicing system for freelancers.",
+    "formats": [
+      "pdf"
+    ],
+    "tags": [
+      "Invoice"
+    ],
+    "images": [
+      {
+        "file": "invoice-boilerplate.png",
+        "title": "Invoice Boilerplate"
+      }
+    ],
+    "github_repository": "mrzool/invoice-boilerplate",
+    "example_website": "https://mrzool.cc/tex-boilerplates/"
+  },
+  {
+    "id": "letter-boilerplate",
+    "title": "Letter Boilerplate",
+    "authors": [
+      {
+        "name": "Mattia Tezzele",
+        "github": {
+          "username": "mrzool"
+        }
+      }
+    ],
+    "description": "Simple automated LaTeX invoicing system for freelancers.",
+    "formats": [
+      "pdf"
+    ],
+    "tags": [
+      "Letter"
+    ],
+    "images": [
+      {
+        "file": "letter-boilerplate.jpg",
+        "title": "Letter Boilerplate"
+      }
+    ],
+    "github_repository": "mrzool/letter-boilerplate",
+    "example_website": "https://mrzool.cc/tex-boilerplates/"
+  },
+  {
+    "id": "yuki-pandoc-templates",
+    "title": "Yuki",
+    "authors": [
+      {
+        "name": "Rubén Gómez Olivencia",
+        "github": {
+          "username": "yuki"
+        }
+      }
+    ],
+    "description": "Custom Pandoc templates to create HTML (using Bootstrap 5 with dark-mode, and Font Awesome) and PDF format files using LuaLaTeX.",
+    "formats": [
+      "pdf",
+      "html"
+    ],
+    "tags": [
+      "Bootstrap",
+      "Bootstrap 5",
+      "LuaLaTeX",
+      "Dark Mode"
+    ],
+    "images": [
+      {
+        "file": "yuki-html.png",
+        "title": "Yuki HTML"
+      }
+    ],
+    "github_repository": "yuki/pandoc-templates"
+  },
+  {
+    "id": "fxpar-bootstrap-pandoc-template",
+    "title": "Bootstrap Template for pandoc",
+    "authors": [
+      {
+        "name": "François Parlant",
+        "github": {
+          "username": "fxpar"
+        }
+      }
+    ],
+    "description": "A template to add some basic bootstrap architecture around a document.",
+    "formats": [
+      "html"
+    ],
+    "tags": [
+      "Bootstrap",
+      "Bootstrap 5"
+    ],
+    "images": [
+      {
+        "file": "bootstrap-pandoc-template.png",
+        "title": "Bootstrap Template for pandoc"
+      }
+    ],
+    "github_repository": "fxpar/bootstrap-pandoc-template"
+  },
+  {
+    "id": "review-response-letter",
+    "title": "Review and Response Letters",
+    "authors": [
+      {
+        "name": "Martin Schrön",
+        "github": {
+          "username": "mschroen"
+        }
+      }
+    ],
+    "description": "Template for LaTeX and/or Pandoc to quickly write reviews and (author) response letters",
+    "formats": [
+      "pdf"
+    ],
+    "tags": [
+      "Letter"
+    ],
+    "images": [
+      {
+        "file": "review-author-response.png",
+        "title": "Review Author Response"
+      }
+    ],
+    "github_repository": "mschroen/review_response_letter"
+  },
+  {
+    "id": "linl",
+    "title": "linl",
+    "authors": [
+      {
+        "name": "Martin Schrön",
+        "github": {
+          "username": "mschroen"
+        }
+      },
+      {
+        "name": "Aaron Wolen",
+        "url": "https://www.aaronwolen.com/",
+        "github": {
+          "username": "aaronwolen"
+        }
+      }
+    ],
+    "description": "Linl Is Not Letter -- Markdown-based LaTeX Letter Template. This package leans on earlier work by Aaron Wolen in his pandoc-letter repository, and extends it for use from R via the rmarkdown package.",
+    "formats": [
+      "pdf"
+    ],
+    "tags": [
+      "Letter",
+      "R Markdown"
+    ],
+    "images": [
+      {
+        "file": "linl.png",
+        "title": "linl Letter"
+      }
+    ],
+    "github_repository": "eddelbuettel/linl"
+  },
+  {
+    "id": "komaletter",
+    "title": "komaletter: Simply Beautiful PDF Letters from Markdown",
+    "authors": [
+      {
+        "name": "Robert Nuske",
+        "github": {
+          "username": "rnuske"
+        }
+      }
+    ],
+    "description": "This package is an adaptation of the linl package for international writers. linl itself is based on the pandoc-letter template and extends it for use from R via the rmarkdown package.",
+    "formats": [
+      "pdf"
+    ],
+    "tags": [
+      "Letter",
+      "R Markdown"
+    ],
+    "images": [
+      {
+        "file": "komaletter-with-sections.png",
+        "title": "komaletter example with sections"
+      }
+    ],
+    "github_repository": "rnuske/komaletter",
+    "website": "https://rnuske.github.io/komaletter/"
+  },
+  {
+    "id": "phoenix4815-pandoc-letter",
+    "title": "Pandoc template for DIN5008 conforming letters",
+    "authors": [
+      {
+        "name": "Phoenix4815",
+        "github": {
+          "username": "Phoenix4815"
+        }
+      }
+    ],
+    "description": "A simple Pandoc LaTeX template for German DIN5008A and DIN5008B conforming letters. Internally, this template is based on the default Pandoc LaTeX template as well as the scrletter KOMA class.",
+    "formats": [
+      "pdf"
+    ],
+    "tags": [
+      "Letter",
+      "DIN 5008"
+    ],
+    "images": [
+      {
+        "file": "pandoc-letter.png",
+        "title": "Pandoc template for DIN5008 conforming letters"
+      }
+    ],
+    "github_repository": "Phoenix4815/pandoc_letter"
+  },
+  {
+    "id": "au-ccs-letterhead-template",
+    "title": "Letterhead for Augusta University",
+    "authors": [
+      {
+        "name": "Clément Aubert",
+        "github": {
+          "username": "aubertc"
+        }
+      },
+      {
+        "name": "Peter Hanukaev",
+        "github": {
+          "username": "phanukaev"
+        }
+      }
+    ],
+    "description": "This is a letterhead for Augusta University. This template respects the brand strategy of the University and was approved by Augusta University's graphic designers.",
+    "formats": [
+      "pdf",
+      "latex"
+    ],
+    "tags": [
+      "Letter",
+      "Augusta University"
+    ],
+    "images": [
+      {
+        "file": "au-ccs-letterhead-template.png",
+        "title": "Letterhead for Augusta University"
+      }
+    ],
+    "github_repository": "the-au-forml-lab/au_ccs_letterhead_template"
+  },
+  {
+    "id": "au-ccs-dissertation-template",
+    "title": "Augusta University School of Computer and Cyber Sciences Ms and PhD Template",
+    "authors": [
+      {
+        "name": "Clément Aubert",
+        "github": {
+          "username": "aubertc"
+        }
+      }
+    ],
+    "description": "This template was designed for Ms and PhD students from the School of Cyber and Computer Sciences at Augusta University as an alternative to the standard, \"ETD\" template offered by the Graduate School. Students more comfortable with the docx format or not willing to learn to use LaTeX and / or markdown should use this standard template instead.",
+    "formats": [
+      "pdf",
+      "latex"
+    ],
+    "tags": [
+      "Augusta University",
+      "Dissertation"
+    ],
+    "images": [
+      {
+        "file": "au-ccs-dissertation-template.png",
+        "title": "Dissertation Template for Augusta University"
+      }
+    ],
+    "github_repository": "the-au-forml-lab/au_ccs_dissertation_template"
+  },
+  {
+    "id": "nauja-pandoc-cookbook-template",
+    "title": "pandoc-cookbook-template",
+    "authors": [
+      {
+        "name": "Nauja",
+        "github": {
+          "username": "Nauja"
+        }
+      }
+    ],
+    "description": "Templates for generating beautiful printable recipes from YAML metadata. These templates includes the themes 'Just One Cookbook' and 'Cuisine AZ'.",
+    "formats": [
+      "html"
+    ],
+    "tags": [
+      "Cookbook",
+      "Recipe"
+    ],
+    "images": [
+      {
+        "file": "pandoc-cookbook-template.png",
+        "title": "Pandoc Cookbook Template"
+      }
+    ],
+    "github_repository": "Nauja/pandoc-cookbook-template"
+  },
+  {
+    "id": "pandoc-book-template",
+    "title": "Pandoc book template",
+    "authors": [
+      {
+        "name": "Daniel Herzog",
+        "github": {
+          "username": "wikiti"
+        }
+      }
+    ],
+    "description": "A simple Pandoc template to build documents and ebooks.",
+    "formats": [
+      "html",
+      "epub",
+      "pdf",
+      "docx"
+    ],
+    "tags": [
+      "Book",
+      "Document"
+    ],
+    "images": [],
+    "github_repository": "wikiti/pandoc-book-template"
+  },
+  {
+    "id": "pandoc-novel",
+    "title": "pandoc-novel",
+    "authors": [
+      {
+        "name": "JP Fosterson",
+        "github": {
+          "username": "jp-fosterson"
+        }
+      }
+    ],
+    "description": "This is a template project for generating a novel or story collection from markdown files and building an ePub file, a printable PDF book suitable for Amazon KDP, and a SFFMS format manuscript PDF.",
+    "formats": [
+      "epub",
+      "pdf"
+    ],
+    "tags": [
+      "Book",
+      "Novel",
+      "Manuscript"
+    ],
+    "images": [
+      {
+        "file": "example-book-pdf.png",
+        "title": "Book PDF"
+      },
+      {
+        "file": "example-manuscript-pdf.png",
+        "title": "Manuscript PDF"
+      }
+    ],
+    "github_repository": "jp-fosterson/pandoc-novel"
+  },
+  {
+    "id": "easy-pandoc-templates",
+    "title": "easy pandoc templates",
+    "authors": [
+      {
+        "name": "Ryan Grose",
+        "github": {
+          "username": "ryangrose"
+        }
+      }
+    ],
+    "description": "A collection of portable pandoc templates with no dependencies. It contains the templates 'elegant bootstrap', 'uikit' and 'bootstrap'.",
+    "formats": [
+      "html"
+    ],
+    "tags": [
+      "Bootstrap",
+      "Bootstrap 2",
+      "UIkit",
+      "UIkit 2"
+    ],
+    "images": [
+      {
+        "file": "elegant-bootstrap.png",
+        "title": "Theme 'elegant bootstrap'"
+      },
+      {
+        "file": "uikit.png",
+        "title": "Theme 'uikit'"
+      },
+      {
+        "file": "bootstrap.png",
+        "title": "Theme 'bootstrap'"
+      }
+    ],
+    "github_repository": "ryangrose/easy-pandoc-templates"
+  }
+]

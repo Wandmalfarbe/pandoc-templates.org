@@ -1,0 +1,47 @@
+[
+  {
+    "id": "latex",
+    "name": "LaTeX",
+    "color": "blue"
+  },
+  {
+    "id": "pdf",
+    "name": "PDF",
+    "color": "green"
+  },
+  {
+    "id": "html",
+    "name": "HTML",
+    "color": "orange"
+  },
+  {
+    "id": "docx",
+    "name": "DOCX",
+    "color": "yellow"
+  },
+  {
+    "id": "epub",
+    "name": "EPUB",
+    "color": "red"
+  },
+  {
+    "id": "pptx",
+    "name": "PPTX",
+    "color": "magenta"
+  },
+  {
+    "id": "odt",
+    "name": "ODT",
+    "color": "cyan"
+  },
+    {
+    "id": "icml",
+    "name": "ICML",
+    "color": "gray"
+  },
+    {
+    "id": "terminal",
+    "name": "Terminal",
+    "color": "gray"
+  }
+]
