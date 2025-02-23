@@ -6,7 +6,7 @@
     <title>Pandoc Templates</title>
 
     <link rel="fluid-icon" href="./img/favicon.png" title="Pandoc Templates">
-    <link rel="alternate icon" type="./image/png" href="./img/favicon.png">
+    <link rel="alternate icon" type="image/png" href="./img/favicon.png">
     <link rel="icon" type="image/svg+xml" href="./img/favicon.svg">
     <link rel="apple-touch-icon" href="./img/favicon.png">
 
@@ -28,8 +28,8 @@
 
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-        <a class="navbar-brand" href="http://pandoc-templates.org">
-            <img src="./img/favicon.svg" alt="Pandoc Templates" width="24" height="24" class="logo">
+        <a class="navbar-brand" href="https://pandoc-templates.org">
+            <img src="./img/favicon.svg" alt="Pandoc Templates logo" width="24" height="24" class="logo">
             Pandoc Templates
         </a>
     </div>
@@ -56,7 +56,7 @@
             <div class="d-block">
                 <div class="btn-group formats" role="group">
                     {{#formats}}
-                        <input type="checkbox" class="btn-check format-checkbox" id="{{id}}" autocomplete="off">
+                        <input type="checkbox" class="btn-check format-checkbox" id="{{id}}">
                         <label class="btn btn-outline-primary" for="{{id}}">{{name}}</label>
                     {{/formats}}
                 </div>
@@ -154,7 +154,7 @@
     </footer>
 </div>
 
-<script type="text/javascript" src="./js/shuffle.js"></script>
-<script type="text/javascript" src="./js/sort-and-filter.js"></script>
+<script src="./js/shuffle.js"></script>
+<script src="./js/sort-and-filter.js"></script>
 </body>
 </html>
