@@ -652,6 +652,40 @@
     "github_repository": "hanneshier/uni-passau-pandoc-template"
   },
   {
+    "id": "panscribe",
+    "title": "PanScribe: Pandoc Templates for Standard Manuscript Format",
+    "authors": [
+      {
+        "name": "Dylan Kinnett",
+        "github": {
+          "username": "dylan-k"
+        }
+      }
+    ],
+    "description": "Simple formatting for writers: Pandoc templates to turn a plain text Markdown file with your poem or story into a polished PDF or Word document in Standard Manuscript Format — fast.",
+    "formats": [
+      "LaTeX",
+      "PDF",
+      "DOCX"
+    ],
+    "tags": [
+      "Poem",
+      "Story",
+      "Manuscript"
+    ],
+    "images": [
+      {
+        "file": "manuscript.png",
+        "title": "A manuscript created with panscribe"
+      },
+      {
+        "file": "poem.png",
+        "title": "A poem created with panscribe"
+      }
+    ],
+    "github_repository": "dylan-k/panscribe"
+  },
+  {
     "id": "markdown-pandoc-book-template",
     "title": "markdown_pandoc_book_template",
     "authors": [
