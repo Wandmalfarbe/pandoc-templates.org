@@ -617,10 +617,39 @@
     "images": [
       {
         "file": "homework-with-solutions.png",
-        "title": "An homework assignment with solutions"
+        "title": "A homework assignment with solutions"
       }
     ],
     "github_repository": "jhwilson/homework_builder"
+  },
+  {
+    "id": "uni-passau-pandoc-template",
+    "title": "Uni Passau Pandoc LaTeX Template",
+    "authors": [
+      {
+        "name": "hanneshier",
+        "github": {
+          "username": "hanneshier"
+        }
+      }
+    ],
+    "description": "Latex Template für Hausarbeiten an der Universität Passau",
+    "formats": [
+      "LaTeX",
+      "PDF"
+    ],
+    "tags": [
+      "Homework",
+      "Assignment",
+      "Universität Passau"
+    ],
+    "images": [
+      {
+        "file": "homework.png",
+        "title": "The title page of a homework assignment"
+      }
+    ],
+    "github_repository": "hanneshier/uni-passau-pandoc-template"
   },
   {
     "id": "markdown-pandoc-book-template",
