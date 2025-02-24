@@ -595,6 +595,34 @@
     "example_website": "https://basicpage.github.io/"
   },
   {
+    "id": "homework-builder",
+    "title": "Homework Builder",
+    "authors": [
+      {
+        "name": "Justin H. Wilson",
+        "github": {
+          "username": "jhwilson"
+        }
+      }
+    ],
+    "description": "A Python script and pandoc template for converting Markdown homeworks to PDFs with toggle-able solutions",
+    "formats": [
+      "LaTeX",
+      "PDF"
+    ],
+    "tags": [
+      "Homework",
+      "Assignment"
+    ],
+    "images": [
+      {
+        "file": "homework-with-solutions.png",
+        "title": "An homework assignment with solutions"
+      }
+    ],
+    "github_repository": "jhwilson/homework_builder"
+  },
+  {
     "id": "markdown-pandoc-book-template",
     "title": "markdown_pandoc_book_template",
     "authors": [
