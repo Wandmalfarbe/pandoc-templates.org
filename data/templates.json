@@ -43,7 +43,7 @@
       },
       {
         "name": "Andrew Dunning",
-        "url": "http://andrewdunning.ca/",
+        "url": "https://andrewdunning.ca/",
         "github": {
           "username": "adunning"
         }
@@ -90,8 +90,8 @@
       }
     ],
     "github_repository": "mszep/pandoc_resume",
-    "website": "http://mszep.github.io/pandoc_resume/",
-    "example_url": "http://mszep.github.io/pandoc_resume/"
+    "website": "https://mszep.github.io/pandoc_resume/",
+    "example_url": "https://mszep.github.io/pandoc_resume/"
   },
   {
     "id": "pdf-slides-and-handouts-using-pandoc-and-beamer",
@@ -666,7 +666,7 @@
       }
     ],
     "github_repository": "diversen/pandoc-uikit",
-    "example_url": "http://diversen.github.io/pandoc-uikit/"
+    "example_url": "https://diversen.github.io/pandoc-uikit/"
   },
   {
     "id": "sgtemplates",
@@ -1293,7 +1293,7 @@
         }
       }
     ],
-    "description": "Templates for generating beautiful printable recipes from YAML metadata. These templates includes the themes 'Just One Cookbook' and 'Cuisine AZ'.",
+    "description": "Templates for generating beautiful printable recipes from YAML metadata. These templates include the themes 'Just One Cookbook' and 'Cuisine AZ'.",
     "formats": [
       "html"
     ],

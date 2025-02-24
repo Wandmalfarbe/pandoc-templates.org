@@ -21,7 +21,7 @@
 
     <meta property="og:title" content="Pandoc Templates">
     <meta property="og:description" content="Pandoc templates for PDF, LaTeX, HTML and Word. Easily convert documents with customizable templates for reports, articles, and more.">
-    <meta property="og:url" content="http://pandoc-templates.org">
+    <meta property="og:url" content="https://pandoc-templates.org">
     <meta property="og:type" content="website">
 </head>
 <body>
@@ -32,6 +32,30 @@
             <img src="./img/favicon.svg" alt="Pandoc Templates logo" width="24" height="24" class="logo">
             Pandoc Templates
         </a>
+        <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
+            <li class="nav-item dropdown">
+                <button class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle theme (dark)">
+                    <i class="bi-moon-stars-fill theme-icon-active"></i><span class="d-none ms-2" id="bd-theme-text">Toggle theme</span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-theme-text">
+                    <li>
+                        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+                            <i class="bi-sun-fill me-2 opacity-50"></i> Light <i class="ms-auto d-none bi-check2"></i>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="true">
+                            <i class="bi-moon-stars-fill me-2 opacity-50"></i> Dark <i class="ms-auto d-none bi-check2"></i>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="false">
+                            <i class="bi-circle-half me-2 opacity-50"></i> Auto <i class="ms-auto d-none bi-check2"></i>
+                        </button>
+                    </li>
+                </ul>
+            </li>
+        </ul>
     </div>
 </nav>
 
@@ -77,11 +101,13 @@
                  data-stars="{{github_repository_json.stargazers_count}}"
                  data-last-update="{{#toTimestamp}}{{github_repository_json.pushed_at}}{{/toTimestamp}}"
                  data-tags="{{tags}}"
-                 data-formats="{{#formats}}{{id}} {{/formats}}">
+                 data-formats="{{#formats}}{{id}} {{/formats}}"
+                 itemscope
+                 itemtype="https://schema.org/SoftwareSourceCode">
                 <div class="card shadow-sm">
                     <div class="ratio ratio-A4">
                         {{#images.0.file}}
-                            <img loading="lazy" class="card-img-top object-fit-contain" src="./data/files/{{id}}/{{images.0.file}}"{{#images.0.title}} alt="{{images.0.title}}"{{/images.0.title}}{{^images.0.title}} alt="Preview"{{/images.0.title}}>
+                            <img loading="lazy" itemprop="image" class="card-img-top object-fit-contain" src="./data/files/{{id}}/{{images.0.file}}"{{#images.0.title}} alt="{{images.0.title}}"{{/images.0.title}}{{^images.0.title}} alt="Preview"{{/images.0.title}}>
                         {{/images.0.file}}
                         {{^images.0.file}}
                             <img loading="lazy" class="card-img-top object-fit-contain" src="./data/files/placeholder/placeholder.jpg" alt="Placeholder">
@@ -96,11 +122,15 @@
                                 {{#github_repository_json.archived}}
                                 <span class="badge text-bg-warning">Archived</span>
                                 {{/github_repository_json.archived}}
-                                <h5 class="card-title">{{title}}</h5>
+                                <h5 class="card-title" itemprop="name">{{title}}</h5>
                                 <h6 class="card-subtitle mb-3 text-body-secondary">
-                                    {{#authors}}<span class="author">{{github.username}} ({{name}})</span>{{/authors}}
+                                    {{#authors}}<span class="author"
+                                                      itemprop="creator"
+                                                      itemscope
+                                                      itemtype="https://schema.org/Person">
+                                        {{github.username}} (<span itemprop="name">{{name}}</span>)</span>{{/authors}}
                                 </h6>
-                                <p class="card-text">{{description}}</p>
+                                <p class="card-text" itemprop="description">{{description}}</p>
                             </div>
                         </div>
                     </div>
@@ -111,10 +141,10 @@
                         <div class="d-flex justify-content-between align-items-center gap-2">
                             <div class="btn-group">
                                 {{#github_repository_json.html_url}}
-                                    <a target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-secondary" href="{{{.}}}"><i class="bi-github"></i> GitHub</a>
+                                    <a itemprop="codeRepository" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-secondary" href="{{{.}}}"><i class="bi-github"></i> GitHub</a>
                                 {{/github_repository_json.html_url}}
                                 {{#website}}
-                                    <a target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-secondary" href="{{{.}}}"><i class="bi-globe"></i> Website</a>
+                                    <a itemprop="url" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-secondary" href="{{{.}}}"><i class="bi-globe"></i> Website</a>
                                 {{/website}}
                             </div>
                             {{#github_repository_json.stargazers_count}}
@@ -156,5 +186,7 @@
 
 <script src="./js/shuffle.js"></script>
 <script src="./js/sort-and-filter.js"></script>
+<script src="./js/dark-mode.js"></script>
+<script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
