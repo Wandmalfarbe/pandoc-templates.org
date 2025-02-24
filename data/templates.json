@@ -607,8 +607,8 @@
     ],
     "description": "A Python script and pandoc template for converting Markdown homeworks to PDFs with toggle-able solutions",
     "formats": [
-      "LaTeX",
-      "PDF"
+      "latex",
+      "pdf"
     ],
     "tags": [
       "Homework",
@@ -635,8 +635,8 @@
     ],
     "description": "Latex Template für Hausarbeiten an der Universität Passau",
     "formats": [
-      "LaTeX",
-      "PDF"
+      "latex",
+      "pdf"
     ],
     "tags": [
       "Homework",
@@ -664,9 +664,9 @@
     ],
     "description": "Simple formatting for writers: Pandoc templates to turn a plain text Markdown file with your poem or story into a polished PDF or Word document in Standard Manuscript Format — fast.",
     "formats": [
-      "LaTeX",
-      "PDF",
-      "DOCX"
+      "latex",
+      "pdf",
+      "docx"
     ],
     "tags": [
       "Poem",
