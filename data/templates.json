@@ -499,6 +499,102 @@
     "website": "https://mushiyo.github.io/pandoc-toc-sidebar/"
   },
   {
+    "id": "pandoc-slides",
+    "title": "pandoc-slides",
+    "authors": [
+      {
+        "name": "andros21",
+        "github": {
+          "username": "andros21"
+        }
+      }
+    ],
+    "description": "A Template for RevealJS Slides written in Markdown",
+    "formats": [
+      "html"
+    ],
+    "tags": [
+      "presentation",
+      "slide",
+      "RevealJS",
+      "Docker"
+    ],
+    "images": [
+      {
+        "file": "pandoc-slides-title.png",
+        "title": "The title slide of a pandoc-slides presentation"
+      },
+      {
+        "file": "pandoc-slides-math.png",
+        "title": "Math in a pandoc-slides presentation"
+      }
+    ],
+    "github_repository": "andros21/pandoc-slides",
+    "example_website": "https://andros21.github.io/pandoc-slides"
+  },
+  {
+    "id": "obsidian-htmlexport",
+    "title": "obsidian-htmlexport",
+    "authors": [
+      {
+        "name": "David Ingerslev",
+        "github": {
+          "username": "davidingerslev"
+        }
+      }
+    ],
+    "description": "A pandoc template and custom CSS to produce HTML output with a responsive table-of-contents.",
+    "formats": [
+      "html"
+    ],
+    "tags": [
+      "Obsidian",
+      "TOC"
+    ],
+    "images": [
+      {
+        "file": "obsidian-htmlexport-without-toc.png",
+        "title": "The obsidian-htmlexport template without a table of contents"
+      }
+    ],
+    "github_repository": "andros21/pandoc-slides",
+    "example_website": "https://andros21.github.io/pandoc-slides"
+  },
+  {
+    "id": "basicpage",
+    "title": "Basic Page Template",
+    "authors": [
+      {
+        "name": "TheoWinterhalter",
+        "github": {
+          "username": "Théo Winterhalter"
+        }
+      },
+      {
+        "name": "Yannick Forster",
+        "github": {
+          "username": "yforster"
+        }
+      }
+    ],
+    "description": "Template for a basic academic page that is ready to use and easy to customise.",
+    "formats": [
+      "html"
+    ],
+    "tags": [
+      "CV",
+      "Website"
+    ],
+    "images": [
+      {
+        "file": "basicpage-example.png",
+        "title": "The Basic Page Template"
+      }
+    ],
+    "github_repository": "basicpage/basicpage.github.io",
+    "example_website": "https://basicpage.github.io/"
+  },
+  {
     "id": "markdown-pandoc-book-template",
     "title": "markdown_pandoc_book_template",
     "authors": [
