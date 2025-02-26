@@ -51,7 +51,8 @@
     ],
     "description": "This template allows you to write letters in Markdown and convert them to nice looking PDFs using Pandoc and LaTeX. It accepts arguments used in the LaTeX letter class.",
     "formats": [
-      "latex"
+      "latex",
+      "pdf"
     ],
     "images": [
       {
@@ -894,6 +895,33 @@
     ],
     "github_repository": "diversen/pandoc-uikit",
     "example_url": "https://diversen.github.io/pandoc-uikit/"
+  },
+  {
+    "id": "pandoc-newcss",
+    "title": "Pandoc-new.css",
+    "authors": [
+      {
+        "name": "Takeda.M",
+        "github": {
+          "username": "kedama-t"
+        }
+      }
+    ],
+    "description": "A pandoc template, styled with new.css. new.css is a classless CSS framework to write modern websites using only HTML.",
+    "formats": [
+      "html"
+    ],
+    "tags": [
+      "new.css"
+    ],
+    "images": [
+      {
+        "file": "pandoc-newcss.png",
+        "title": "Pandoc-new.css example HTML"
+      }
+    ],
+    "github_repository": "kedama-t/pandoc-newcss",
+    "example_url": "https://kedama-t.github.io/pandoc-newcss/"
   },
   {
     "id": "sgtemplates",
