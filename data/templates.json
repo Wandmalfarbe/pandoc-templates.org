@@ -686,6 +686,46 @@
     "github_repository": "dylan-k/panscribe"
   },
   {
+    "id": "jhap",
+    "title": "JHAP Templates",
+    "authors": [
+      {
+        "name": "Kevin Klement",
+        "github": {
+          "username": "frabjous"
+        }
+      }
+    ],
+    "description": "Contains the pandoc templates used by the Journal for the History of Analytical Philosophy to create its output PDF, ePub and HTML files.",
+    "formats": [
+      "pdf",
+      "epub",
+      "html"
+    ],
+    "tags": [
+      "JHAP",
+      "Journal for the History of Analytical Philosophy",
+      "Journal",
+      "Article"
+    ],
+    "images": [
+      {
+        "file": "jhap-pdf.png",
+        "title": "The title page of a PDF produced with the JHAP LaTeX template"
+      },
+      {
+        "file": "jhap-html.png",
+        "title": "The title section of a Website produced with the JHAP HTML template"
+      },
+      {
+        "file": "jhap-epub.png",
+        "title": "The title page of an eBook produced with the JHAP EPUB template"
+      }
+    ],
+    "icon": "jhaplogo.svg",
+    "github_repository": "frabjous/jhap-templates"
+  },
+  {
     "id": "markdown-pandoc-book-template",
     "title": "markdown_pandoc_book_template",
     "authors": [
