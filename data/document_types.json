@@ -1,0 +1,62 @@
+[
+  {
+    "id": "article",
+    "name": "Article"
+  },
+  {
+    "id": "book",
+    "name": "Book"
+  },
+  {
+    "id": "dissertation_theis",
+    "name": "Dissertation / Thesis"
+  },
+  {
+    "id": "letter",
+    "name": "Letter"
+  },
+  {
+    "id": "cv_resume",
+    "name": "CV / Résumé"
+  },
+  {
+    "id": "presentation",
+    "name": "Presentation / Slide"
+  },
+  {
+    "id": "paper",
+    "name": "Paper"
+  },
+  {
+    "id": "website",
+    "name": "Website"
+  },
+  {
+    "id": "cookbook",
+    "name": "Cookbook / Recipe"
+  },
+  {
+    "id": "invoice",
+    "name": "Invoice"
+  },
+  {
+    "id": "manuscript",
+    "name": "Manuscript"
+  },
+  {
+    "id": "poem",
+    "name": "Poem"
+  },
+  {
+    "id": "homework",
+    "name": "Homework Assignment / Exam"
+  },
+  {
+    "id": "handout",
+    "name": "Handout"
+  },
+  {
+    "id": "grant_writing",
+    "name": "Grant Writing"
+  }
+]

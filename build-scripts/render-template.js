@@ -8,12 +8,14 @@ const timeAgo = new TimeAgo('en-US');
 
 let templates = JSON.parse(fs.readFileSync('./data/all.json', 'utf8'));
 let formats = JSON.parse(fs.readFileSync('./data/formats.json', 'utf8'));
+let documentTypes = JSON.parse(fs.readFileSync('./data/document_types.json', 'utf8'));
 let htmlTemplate = fs.readFileSync('./src/index.mustache', 'utf8');
 let dateOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
 
 const templateData = {
     "templates": templates,
     "formats": formats,
+    "document_types": documentTypes,
     "last_update_site": new Date(),
     "total_templates": templates.length,
     "timeAgo": function () {

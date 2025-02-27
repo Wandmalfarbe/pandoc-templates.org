@@ -1,47 +1,48 @@
 [
   {
     "id": "latex",
-    "name": "LaTeX",
-    "color": "blue"
+    "name": "LaTeX"
   },
   {
     "id": "pdf",
     "name": "PDF",
-    "color": "green"
+    "full_name": "Portable Document Format"
   },
   {
     "id": "html",
     "name": "HTML",
-    "color": "orange"
+    "full_name": "Hypertext Markup Language"
   },
   {
     "id": "docx",
     "name": "DOCX",
-    "color": "yellow"
+    "full_name": "Microsoft Word docx"
   },
   {
     "id": "epub",
-    "name": "EPUB",
-    "color": "red"
+    "name": "EPUB"
   },
   {
     "id": "pptx",
     "name": "PPTX",
-    "color": "magenta"
+    "full_name": "Microsoft PowerPoint pptx"
   },
   {
     "id": "odt",
     "name": "ODT",
-    "color": "cyan"
+    "full_name": "OpenDocument-Text"
   },
-    {
+  {
+    "id": "revealjs",
+    "name": "reveal.js"
+  },
+  {
     "id": "icml",
     "name": "ICML",
-    "color": "gray"
+    "full_name": "Adobe InDesign icml"
   },
-    {
+  {
     "id": "terminal",
-    "name": "Terminal",
-    "color": "gray"
+    "name": "Terminal"
   }
 ]
