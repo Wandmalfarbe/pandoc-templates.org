@@ -81,9 +81,18 @@
                 <div class="btn-group formats" role="group">
                     {{#formats}}
                         <input type="checkbox" class="btn-check format-checkbox" id="{{id}}">
-                        <label class="btn btn-outline-primary" for="{{id}}">{{name}}</label>
+                        <label class="btn btn-outline-primary" {{#full_name}}title="{{full_name}}" {{/full_name}}for="{{id}}">{{name}}</label>
                     {{/formats}}
                 </div>
+            </div>
+        </div>
+        <div class="col-auto col-document-types">
+            <label class="form-label">Document Types</label>
+            <div class="d-flex flex-wrap" style="gap: 0.25rem;">
+                {{#document_types}}
+                    <input type="checkbox" class="btn-check document-type-checkbox" id="{{id}}">
+                    <label class="btn btn-outline-primary" for="{{id}}">{{name}}</label>
+                {{/document_types}}
             </div>
         </div>
         <p class="text-body-secondary mb-0"><span id="filtered-items">{{total_templates}}</span> Results</p>
@@ -96,12 +105,11 @@
     <div id="gallery" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-4 row-cols-xxl-5 g-3">
         {{#templates}}
             <div class="col"
-                 data-title="{{title}}"
-                 data-description="{{description}}"
                  data-stars="{{github_repository_json.stargazers_count}}"
                  data-last-update="{{#toTimestamp}}{{github_repository_json.pushed_at}}{{/toTimestamp}}"
                  data-tags="{{tags}}"
                  data-formats="{{#formats}}{{id}} {{/formats}}"
+                 data-document-types="{{#document_types}}{{.}} {{/document_types}}"
                  itemscope
                  itemtype="https://schema.org/SoftwareSourceCode">
                 <div class="card shadow-sm">
@@ -122,7 +130,7 @@
                                 {{#github_repository_json.archived}}
                                 <span class="badge text-bg-warning">Archived</span>
                                 {{/github_repository_json.archived}}
-                                <h5 class="card-title" itemprop="name">{{title}}</h5>
+                                <h5 class="card-title title" itemprop="name">{{title}}</h5>
                                 <h6 class="card-subtitle mb-3 text-body-secondary">
                                     {{#authors}}<span class="author"
                                                       itemprop="creator"
@@ -130,7 +138,7 @@
                                                       itemtype="https://schema.org/Person">
                                         {{github.username}} (<span itemprop="name">{{name}}</span>)</span>{{/authors}}
                                 </h6>
-                                <p class="card-text" itemprop="description">{{description}}</p>
+                                <p class="card-text description" itemprop="description">{{description}}</p>
                             </div>
                         </div>
                     </div>

@@ -14,6 +14,9 @@ document.getElementById("search").addEventListener('keyup', handleFilter);
 document.querySelectorAll(".format-checkbox").forEach(element => {
     element.addEventListener('change', handleFilter);
 });
+document.querySelectorAll(".document-type-checkbox").forEach(element => {
+    element.addEventListener('change', handleFilter);
+});
 
 function handleSortChange(event) {
     const value = event.target.value;
@@ -65,22 +68,27 @@ function handleFilter() {
     const filterFormats = Array.from(document.querySelectorAll(".format-checkbox"))
         .filter(checkbox => checkbox.checked)
         .map(checkbox => checkbox.getAttribute("id"));
+    const filterDocumentTypes = Array.from(document.querySelectorAll(".document-type-checkbox"))
+        .filter(checkbox => checkbox.checked)
+        .map(checkbox => checkbox.getAttribute("id"));
 
     shuffleInstance.filter((pandocTheme) => {
-        const title = pandocTheme.dataset.title.toLowerCase().trim();
-        const description = pandocTheme.dataset.description.toLowerCase().trim();
+        const title = pandocTheme.querySelector(".title").innerText.toLowerCase().trim();
+        const author = pandocTheme.querySelector(".author").innerText.toLowerCase().trim();
+        const description = pandocTheme.querySelector(".description").innerText.toLowerCase().trim();
         const formats = pandocTheme.dataset.formats ? pandocTheme.dataset.formats.toLowerCase().trim() : "";
+        const documentTypes = pandocTheme.dataset.documentTypes ? pandocTheme.dataset.documentTypes.toLowerCase().trim() : "";
         const tags = pandocTheme.dataset.tags ? pandocTheme.dataset.tags.toLowerCase().trim() : "";
 
         let containsAll = (arr, target) => target.every(v => arr.includes(v));
 
         const hasFormats = containsAll(pandocTheme.dataset.formats.trim().split(' '), filterFormats);
-
-        return (title.includes(searchText) || description.includes(searchText) || formats.includes(searchText) || tags.includes(searchText)) && hasFormats;
+        const hasDocumentTypes = containsAll(pandocTheme.dataset.documentTypes.trim().split(' '), filterDocumentTypes);
+        const containsSearchedText = (title.includes(searchText) || author.includes(searchText) || description.includes(searchText) || formats.includes(searchText) || documentTypes.includes(searchText) || tags.includes(searchText));
+        return containsSearchedText && hasFormats && hasDocumentTypes;
     });
 
     shuffleInstance.on(Shuffle.EventType.LAYOUT, (data) => {
-        console.log(data.shuffle.visibleItems);
         document.getElementById("filtered-items").innerHTML = data.shuffle.visibleItems;
     });
 }
