@@ -94,12 +94,12 @@ module.exports = function (grunt) {
                     dest: "<%= settings.distDirectory %>/data/files"
                 }]
             },
-            images: {
+            favicons: {
                 files: [{
                     expand: true,
-                    cwd: "<%= settings.srcDirectory %>/img",
-                    src: ["*"],
-                    dest: "<%= settings.distDirectory %>/img"
+                    cwd: "<%= settings.srcDirectory %>/",
+                    src: ["*.png", "*.svg"],
+                    dest: "<%= settings.distDirectory %>/"
                 }]
             },
             minified_js_files: {
@@ -155,7 +155,7 @@ module.exports = function (grunt) {
     // tasks
     grunt.registerTask("build", [
         "copy:data",
-        "copy:images",
+        "copy:favicons",
         "cssmin",
         "copy:minified_css_files",
         "copy:fonts",
