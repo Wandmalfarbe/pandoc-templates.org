@@ -38,7 +38,7 @@ function handleSortChange(event) {
     }
 
     function sortByTitle(element) {
-        return element.dataset.title.toLowerCase();
+        return element.querySelector(".title").innerText.toLowerCase().trim();
     }
 
     let options;
