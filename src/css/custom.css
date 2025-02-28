@@ -1,3 +1,30 @@
+/**
+ * Customize Bootstrap to make the light mode WCAG AAA conforming
+ */
+:root {
+    --bs-border-radius: 0;
+}
+
+:root, [data-bs-theme="light"] {
+    --bs-success: #006200;
+    --bs-success-rgb: 0, 98, 0;
+    --bs-warning: #784900;
+    --bs-warning-rgb: 120, 73, 0;
+    --bs-danger: #ac0023;
+    --bs-danger-rgb: 172, 0, 35;
+}
+
+[data-bs-theme="light"] .btn-outline-primary {
+    --bs-btn-color: #003f7d;
+    --bs-btn-border-color: #003f7d;
+    --bs-btn-hover-bg: #003f7d;
+    --bs-btn-hover-border-color: #003f7d;
+    --bs-btn-active-bg: #003f7d;
+    --bs-btn-active-border-color: #003f7d;
+    --bs-btn-disabled-color: #003f7d;
+    --bs-btn-disabled-border-color: #003f7d;
+}
+
 /*
  * Menu
  */
