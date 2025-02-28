@@ -39,13 +39,13 @@ const templateData = {
             const diffInDays = Math.floor(diffInMillis / 86400000);
 
             if (diffInDays <= 32) {
-                return "time-new";
+                return "text-success";
             } else if(diffInDays <= 183) { // half a year
-                return "time-new";
+                return "text-success";
             } else if(diffInDays <= 728) { // 2 years
-                return "time-old";
+                return "text-warning";
             } else {
-                return "time-older";
+                return "text-danger";
             }
         }
     },
