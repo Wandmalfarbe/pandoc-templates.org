@@ -922,6 +922,37 @@
     "github_repository": "tonyblundell/pandoc-bootstrap-template"
   },
   {
+    "id": "ashki23-pandoc-bootstrap",
+    "title": "Pandoc-bootstrap template",
+    "authors": [
+      {
+        "name": "Ashkan Mirzaee",
+        "github": {
+          "username": "ashki23"
+        }
+      }
+    ],
+    "description": "Application for converting Markdown files into bootstrap styled HTML pages by Pandoc.",
+    "formats": [
+      "html"
+    ],
+    "document_types": [
+      "website",
+      "article"
+    ],
+    "tags": [
+      "Bootstrap",
+      "Bootstrap 5"
+    ],
+    "images": [
+      {
+        "file": "bootstrap-5-with-navbar-and-table-of-contents.png",
+        "title": "Bootstrap 5 template with navbar and table of contents"
+      }
+    ],
+    "github_repository": "ashki23/pandoc-bootstrap"
+  },
+  {
     "id": "keeferrourke-pandoc-cookbook",
     "title": "Pandoc Cookbook",
     "authors": [
