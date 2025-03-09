@@ -1905,6 +1905,37 @@
     "github_repository": "jp-fosterson/pandoc-novel"
   },
   {
+    "id": "pandoc-extra-word-template",
+    "title": "Microsoft Word template for numbered sections",
+    "authors": [
+      {
+        "name": "Kristian Niemi",
+        "github": {
+          "username": "krissen"
+        }
+      }
+    ],
+    "description": "Uploads of some extra pandoc material which might be of interest to others. It contains numbered-sections.docx, a docx-template for numbered sections.",
+    "formats": [
+      "docx"
+    ],
+    "document_types": [
+      "article",
+      "book",
+      "dissertation_theis"
+    ],
+    "tags": [
+      "numbered sections"
+    ],
+    "images": [
+      {
+        "file": "document.png",
+        "title": "A Word document with numbered sections"
+      }
+    ],
+    "github_repository": "krissen/pandoc-extra"
+  },
+  {
     "id": "easy-pandoc-templates",
     "title": "easy pandoc templates",
     "authors": [
