@@ -953,6 +953,39 @@
     "github_repository": "ashki23/pandoc-bootstrap"
   },
   {
+    "id": "writertools",
+    "title": "writertools",
+    "authors": [
+      {
+        "name": "Robert Kingett",
+        "github": {
+          "username": "rkingett"
+        }
+      }
+    ],
+    "description": "This holds templates and Macros aimed to help writers using Pandoc or other tools. All templates work with Microsoft Word or LibreOffice but can be freely adapted, as you so wish.",
+    "formats": [
+      "docx",
+      "odt"
+    ],
+    "document_types": [
+      "article",
+      "book",
+      "dissertation_theis"
+    ],
+    "tags": [
+      "Microsoft Word",
+      "LibreOffice"
+    ],
+    "images": [
+      {
+        "file": "document-odt.png",
+        "title": "writertools with ODT template"
+      }
+    ],
+    "github_repository": "rkingett/writertools"
+  },
+  {
     "id": "keeferrourke-pandoc-cookbook",
     "title": "Pandoc Cookbook",
     "authors": [
