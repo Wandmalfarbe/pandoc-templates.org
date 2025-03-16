@@ -1115,6 +1115,38 @@
     "github_repository": "pneff/pandoc-templates"
   },
   {
+    "id": "prosegrinder-pandoc-templates",
+    "title": "Pandoc Templates",
+    "authors": [
+      {
+        "name": "David L. Day",
+        "github": {
+          "username": "davidlday"
+        }
+      }
+    ],
+    "description": "An opinionated set of pandoc templates and scripts for converting markdown to DOCX manuscripts that adhere to William Shunn's Proper Manuscript Format guidelines using pandoc.",
+    "formats": [
+      "docx"
+    ],
+    "document_types": [
+      "manuscript"
+    ],
+    "tags": [
+    ],
+    "images": [
+      {
+        "file": "shun-long-example.png",
+        "title": "A manuscript example (long)"
+      },
+      {
+        "file": "shun-short-modern-example.png",
+        "title": "A manuscript example (long with the modern template)"
+      }
+    ],
+    "github_repository": "prosegrinder/pandoc-templates"
+  },
+  {
     "id": "pandoc-newcss",
     "title": "Pandoc-new.css",
     "authors": [
