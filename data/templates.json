@@ -1301,6 +1301,36 @@
     "example_url": "https://benjam.info/panam/"
   },
   {
+    "id": "mindoc",
+    "title": "mindoc",
+    "authors": [
+      {
+        "name": "Brian Lennon",
+        "github": {
+          "username": "bitfragment"
+        }
+      }
+    ],
+    "description": "Template for a single self-contained, very mobile-friendly HTML document. The template uses Pure CSS for styling.",
+    "formats": [
+      "html"
+    ],
+    "document_types": [
+      "website",
+      "article"
+    ],
+    "tags": [
+      "Pure CSS"
+    ],
+    "images": [
+      {
+        "file": "mindoc.png",
+        "title": "A website created with the mindoc template"
+      }
+    ],
+    "github_repository": "bitfragment/mindoc"
+  },
+  {
     "id": "github-pandoc-css",
     "title": "github-pandoc.css",
     "authors": [
