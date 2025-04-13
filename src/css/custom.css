@@ -3,6 +3,7 @@
  */
 :root {
     --bs-border-radius: 0;
+    --bs-badge-border-radius: 2px;
 }
 
 :root, [data-bs-theme="light"] {
@@ -117,4 +118,8 @@ img.icon {
 
 .time-older {
     color: #ac0023;
+}
+
+.text-bg-warning {
+    color: white !important;
 }
