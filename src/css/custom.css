@@ -3,7 +3,6 @@
  */
 :root {
     --bs-border-radius: 0;
-    --bs-badge-border-radius: 2px;
 }
 
 :root, [data-bs-theme="light"] {
@@ -53,7 +52,9 @@
 }
 
 .badge {
-    margin-right: 5px;
+    --bs-badge-border-radius: 2px;
+
+    margin-left: 5px;
     margin-bottom: 5px;
 }
 
