@@ -639,8 +639,7 @@
         "title": "The obsidian-htmlexport template without a table of contents"
       }
     ],
-    "github_repository": "andros21/pandoc-slides",
-    "example_website": "https://andros21.github.io/pandoc-slides"
+    "github_repository": "davidingerslev/obsidian-htmlexport"
   },
   {
     "id": "basicpage",
