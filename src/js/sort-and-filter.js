@@ -37,6 +37,14 @@ function handleSortChange(event) {
         return stars;
     }
 
+    function sortByReleases(element) {
+        let releases = parseInt(element.dataset.releases);
+        if (releases === undefined || isNaN(releases)) {
+            releases = 0;
+        }
+        return releases;
+    }
+
     function sortByTitle(element) {
         return element.querySelector(".title").innerText.toLowerCase().trim();
     }
@@ -45,7 +53,12 @@ function handleSortChange(event) {
     if (value === 'stars') {
         options = {
             reverse: true,
-            by: sortByStars
+            by: sortByStars,
+        };
+    }  else if (value === 'releases') {
+        options = {
+            reverse: true,
+            by: sortByReleases,
         };
     } else if (value === 'last-update') {
         options = {
