@@ -9,6 +9,7 @@ const shuffleInstance = new Shuffle(element, {
     speed: 150
 });
 
+document.getElementById("filter-form").addEventListener("submit", (event) => {event.preventDefault();})
 document.getElementById("sort").addEventListener('change', handleSortChange.bind(this));
 document.getElementById("search").addEventListener('keyup', handleFilter);
 document.querySelectorAll(".format-checkbox").forEach(element => {
