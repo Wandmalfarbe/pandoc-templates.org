@@ -1,0 +1,160 @@
+---
+layout: template.liquid
+pagination:
+  data: templates
+  size: 1
+  alias: template
+permalink: "template/{{ template.id }}/"
+eleventyComputed:
+  title: "{{ template.title }} | pandoc-templates.org"
+---
+
+{% if template %}
+    {% if template.github_repository_json.archived %}
+        <div class="alert alert-warning" role="alert">
+            The GitHub repository of this template has been archived.
+        </div>
+    {% endif %}
+
+    <div class="row">
+        <div class="col-12 col-md-8">
+            {% if template.icon %}
+                <img class="icon icon-large" src="/files/{{ template.id }}/{{ template.icon }}" alt="Icon">
+            {% endif %}
+
+            <h1 itemprop="name">
+                {{ template.title }}
+                {% if template.subtitle %}: <small class="subtitle">{{ template.subtitle }}</small>{% endif %}
+            </h1>
+
+            <h5 class="mb-3 text-body-secondary">
+                by {% for author in template.authors %}
+                    <span class="author"
+                          itemprop="creator"
+                          itemscope
+                          itemtype="https://schema.org/Person">{{ author.github.username }} (<span itemprop="name">{{ author.name }}</span>)</span>
+                {% endfor %}
+            </h5>
+
+            <p class="description" itemprop="description">{{ template.description }}</p>
+            <p class="description" itemprop="description">{{ template.long_description }}</p>
+
+            <div class="d-flex justify-content-between align-items-center gap-2 mb-3">
+                <div class="btn-group">
+                    {% if template.github_repository_json.html_url %}
+                        <a itemprop="codeRepository" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary" href="{{ template.github_repository_json.html_url }}"><i class="bi-github"></i> GitHub</a>
+                    {% endif %}
+                    {% if template.website %}
+                        <a itemprop="url" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary" href="{{ template.website }}"><i class="bi-globe"></i> Website</a>
+                    {% endif %}
+                </div>
+                <div class="text-end">
+                    {% for format in template.formats %}<span class="badge text-bg-secondary format-{{ format.id }}">{{ format.name }}</span>{% endfor %}
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-4">
+
+            <ul class="list-group list-group-flush small">
+                <li class="list-group-item ps-0 pe-0 text-body-secondary d-flex justify-content-between align-items-center">
+      <span class="fw-semibold me-2">
+        <i class="me-1 bi bi-clock" style="font-size: 1.1rem;"></i> Last Update
+      </span>
+                    {% if template.github_repository_json.pushed_at %}
+                        <span title="{{ template.github_repository_json.pushed_at | dateToHumanReadableLong }}" class="{{ template.github_repository_json.pushed_at | cssClassTimeAgo }}">
+          {{ template.github_repository_json.pushed_at | timeAgo }}
+        </span>
+                    {% endif %}
+                    {% if template.last_update %}
+                        <span title="{{ template.last_update | dateToHumanReadableLong }}" class="{{ template.last_update | cssClassTimeAgo }}">
+          {{ template.last_update | timeAgo }}
+        </span>
+                    {% endif %}
+                </li>
+                {% if template.github_repository_json.stargazers_count %}
+                    <li class="list-group-item ps-0 pe-0 text-body-secondary d-flex justify-content-between align-items-center">
+      <span class="fw-semibold me-2">
+        <i class="me-1 bi bi-star" style="font-size: 1.1rem;"></i> Stars
+      </span>
+                        <span class="text-end">{{ template.github_repository_json.stargazers_count }} stars</span>
+                    </li>
+                {% endif %}
+                {% if template.github_repository_json.forks_count %}
+                    <li class="list-group-item ps-0 pe-0 text-body-secondary d-flex justify-content-between align-items-center">
+      <span class="fw-semibold me-2">
+        <i class="me-1 bi bi-signpost-split" style="font-size: 1.1rem;"></i> Forks
+      </span>
+                        <span class="text-end">{{ template.github_repository_json.forks_count }} forks</span>
+                    </li>
+                {% endif %}
+                {% if template.github_repository_json.fork %}
+                    <li class="list-group-item ps-0 pe-0 text-body-secondary d-flex justify-content-between align-items-center">
+      <span class="fw-semibold me-2">
+        <i class="me-1 bi bi-signpost-split" style="font-size: 1.1rem;"></i> Is Fork
+      </span>
+                        <span class="text-end">Yes</span>
+                    </li>
+                {% endif %}
+                {% if template.github_repository_json.license %}
+                    <li class="list-group-item ps-0 pe-0 text-body-secondary d-flex justify-content-between align-items-center">
+        <span class="fw-semibold me-2">
+          <i class="me-1 bi bi-file-medical" style="font-size: 1.1rem;"></i> License
+        </span>
+                        <span class="text-end" title="{{ template.github_repository_json.license.name | escape }}">{{ template.github_repository_json.license.spdx_id }}</span>
+                    </li>
+                {% endif %}
+                {% if template.github_repository_releases_json != blank %}
+                    <li class="list-group-item ps-0 pe-0 text-body-secondary d-flex justify-content-between align-items-center">
+        <span class="fw-semibold me-2">
+          <i class="me-1 bi bi-box-seam" style="font-size: 1.1rem;"></i> Releases
+        </span>
+                        <span class="text-end">{{ template.github_repository_releases_json.size }} releases</span>
+                    </li>
+                {% endif %}
+            </ul>
+        </div>
+    </div>
+
+    {% if template.images and template.images[0] %}
+        <h2 class="mt-4">Preview</h2>
+        <div class="row">
+            {% for image in template.images %}
+                <div class="col-12 col-md-6 col-lg-6 col-xxl-4">
+                    <figure class="mb-4">
+                        <a href="/files/{{ template.id }}/{{ image.file }}"
+                           target="_blank"
+                           rel="noopener">
+                            <img loading="lazy" itemprop="image" class="img-fluid shadow detail-image mb-3"
+                                 src="/files/{{ template.id }}/{{ image.file }}"
+                                 alt="{% if image.title %}{{ image.title }}{% else %}Preview{% endif %}">
+                        </a>
+                        {% if image.title %}
+                            <figcaption>{{ image.title }}</figcaption>
+                        {% endif %}
+                    </figure>
+                </div>
+            {% endfor %}
+        </div>
+    {% endif %}
+
+    {% if template.github_repository_releases_json and template.github_repository_releases_json[0] %}
+        {% assign release = template.github_repository_releases_json[0] %}
+        <h2>Latest Version</h2>
+        <div class="card">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center gap-2">
+                    <a class="invisible-link" href="{{ release.html_url }}">
+                        <h4 class="card-title d-inline-block">{{ release.name }}</h4>
+                    </a>
+                    <div>
+                        <span class="badge text-bg-success ms-2"><i class="bi-tag"></i> Latest</span>
+                        <span class="badge text-bg-secondary ms-2"><i class="bi-tag"></i> {{ release.tag_name }}</span>
+                    </div>
+                </div>
+                <span class="card-subtitle mb-2 text-body-secondary">{{ release.published_at | dateToHumanReadableMedium }}</span>
+                <span class="card-subtitle mb-2 {{ release.published_at | cssClassTimeAgo }}">({{ release.published_at | timeAgo }})</span><br>
+                <a href="{{ release.html_url }}" class="btn btn-outline-secondary mt-3">Release on GitHub</a>
+            </div>
+        </div>
+    {% endif %}
+{% endif %}

@@ -1,7 +1,7 @@
 import fs from 'fs';
 
-const pandocTemplatesData = fs.readFileSync('./data/all.json', {encoding: 'utf8', flag: 'r'});
-const outputFormatsData = fs.readFileSync('./data/formats.json', {encoding: 'utf8', flag: 'r'});
+const pandocTemplatesData = fs.readFileSync('./src/_data/templates.json', {encoding: 'utf8', flag: 'r'});
+const outputFormatsData = fs.readFileSync('./src/_data/formats.json', {encoding: 'utf8', flag: 'r'});
 
 let pandocTemplates = JSON.parse(pandocTemplatesData);
 let outputFormats = JSON.parse(outputFormatsData);
@@ -32,4 +32,4 @@ for (let pandocTemplate of pandocTemplates) {
     }
 }
 
-fs.writeFileSync('./data/all.json', JSON.stringify(pandocTemplates));
+fs.writeFileSync('./src/_data/templates.json', JSON.stringify(pandocTemplates));

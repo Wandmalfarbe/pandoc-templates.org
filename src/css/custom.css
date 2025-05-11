@@ -81,6 +81,9 @@ img.icon {
     margin-left: 5px;
     float: right;
 }
+img.icon.icon-large {
+    width: 128px;
+}
 
 .card-img-top {
     border-bottom: var(--bs-card-border-width) solid var(--bs-card-border-color);
@@ -123,4 +126,10 @@ img.icon {
 
 .text-bg-warning {
     color: white !important;
+}
+
+a.invisible-link,
+a.invisible-link:hover {
+    text-decoration: inherit;
+    color: inherit;
 }
