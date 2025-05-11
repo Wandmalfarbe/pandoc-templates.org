@@ -1,0 +1,23 @@
+{% include "partials/head" %}
+<body>
+
+{% include "partials/navbar" %}
+
+{% include "partials/filter" %}
+
+<div class="container-fluid pt-2" role="main">
+
+    <div id="gallery" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-4 row-cols-xxl-5 g-3">
+        {{ content | raw }}
+    </div>
+    <div class="sizer"></div>
+</div>
+
+{% include "partials/footer" %}
+
+<script src="/js/shuffle.js"></script>
+<script src="/js/sort-and-filter.js"></script>
+<script src="/js/dark-mode.js"></script>
+<script src="/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+---
+layout: index.liquid
+title: pandoc-templates.org
+---
+
+{% for template in templates %}
+  <div class="col"
+       data-stars="{{ template.github_repository_json.stargazers_count }}"
+       data-releases="{% if template.github_repository_releases_json != blank %}{{ template.github_repository_releases_json.size }}{% endif %}"
+       data-last-update="{{ template.github_repository_json.pushed_at | dateToTimestamp }}"
+       data-tags="{{ template.tags }}"
+       data-formats="{% for format in template.formats %}{{ format.id }} {% endfor %}"
+       data-document-types="{% for doc in template.document_types %}{{ doc }} {% endfor %}"
+       itemscope
+       itemtype="https://schema.org/SoftwareSourceCode">
+    <div class="card shadow-sm">
+      <div class="ratio ratio-A4">
+        <a href="template/{{ template.id }}">
+          {% if template.images[0].file %}
+            <img loading="lazy"
+                 itemprop="image"
+                 class="card-img-top object-fit-contain"
+                 src="/files/{{ template.id }}/{{ template.images[0].file }}"
+                 alt="{{ template.images[0].title | default: 'Preview' }}">
+          {% else %}
+            <img loading="lazy"
+                 class="card-img-top object-fit-contain"
+                 src="/files/placeholder/placeholder.jpg"
+                 alt="Placeholder">
+          {% endif %}
+        </a>
+      </div>
+      <div class="card-body overflow-fadeout overflow-hidden">
+        <div class="ratio ratio-4x3">
+          <div><a class="invisible-link" href="template/{{ template.id }}">
+            {% if template.icon %}
+              <img class="icon" src="/files/{{ template.id }}/{{ template.icon }}" alt="Icon">
+            {% endif %}
+            {% if template.github_repository_json.archived %}
+              <span class="badge text-bg-warning">Archived</span>
+            {% endif %}
+            <h5 class="card-title title" itemprop="name">
+              {{ template.title }}{% if template.subtitle %}: <small class="subtitle">{{ template.subtitle }}</small>{% endif %}
+            </h5>
+            <h6 class="card-subtitle mb-3 text-body-secondary">
+              {% for author in template.authors %}
+                <span class="author"
+                      itemprop="creator"
+                      itemscope
+                      itemtype="https://schema.org/Person">
+                  {{ author.github.username }} (<span itemprop="name">{{ author.name }}</span>)
+                </span>
+              {% endfor %}
+            </h6>
+            <p class="card-text description" itemprop="description">{{ template.description }}</p>
+          </a></div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="text-end">
+          {% for format in template.formats %}
+            <span class="badge text-bg-secondary format-{{ format.id }}">{{ format.name }}</span>
+          {% endfor %}
+        </div>
+        <div class="d-flex justify-content-between align-items-center gap-2">
+          <div class="btn-group">
+            {% if template.github_repository_json.html_url %}
+              <a itemprop="codeRepository"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 class="btn btn-sm btn-outline-secondary"
+                 href="{{ template.github_repository_json.html_url }}">
+                <i class="bi-github"></i> GitHub
+              </a>
+            {% endif %}
+            {% if template.website %}
+              <a itemprop="url"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 class="btn btn-sm btn-outline-secondary"
+                 href="{{ template.website }}">
+                <i class="bi-globe"></i> Website
+              </a>
+            {% endif %}
+          </div>
+          {% if template.github_repository_json.stargazers_count %}
+            <small class="text-body-secondary text-end">{{ template.github_repository_json.stargazers_count }} Stars</small>
+          {% endif %}
+        </div>
+      </div>
+      <div class="card-footer text-body-secondary justify-content-between">
+        Last Update:
+        {% if template.github_repository_json.pushed_at %}
+          <span title="{{ template.github_repository_json.pushed_at | dateToHumanReadableLong }}"
+                class="{{ template.github_repository_json.pushed_at | cssClassTimeAgo }}">
+            {{ template.github_repository_json.pushed_at | timeAgo }}
+          </span>
+        {% endif %}
+        {% if template.last_update %}
+          <span title="{{ template.last_update | dateToHumanReadableLong }}"
+                class="{{ template.last_update | cssClassTimeAgo }}">
+            {{ template.last_update | timeAgo }}
+          </span>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+{% endfor %}

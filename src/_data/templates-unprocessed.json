@@ -19,17 +19,21 @@
       "article",
       "book",
       "presentation",
-      "dissertation_theis"
+      "dissertation_thesis"
     ],
     "icon": "eisvogel-icon.png",
     "images": [
       {
-        "file": "preview.png",
-        "title": "Preview 1"
+        "file": "title-page-custom.png",
+        "title": "A custom title page"
       },
       {
-        "file": "preview2.png",
-        "title": "Preview 2"
+        "file": "basic-example.png",
+        "title": "A basic example page"
+      },
+      {
+        "file": "images-and-tables.png",
+        "title": "images and tables"
       }
     ],
     "pandoc_version": "3",
@@ -98,8 +102,12 @@
     ],
     "images": [
       {
-        "file": "resume.png",
-        "title": "Preview 1"
+        "file": "resume-pdf.png",
+        "title": "PDF format"
+      },
+      {
+        "file": "resume-html.png",
+        "title": "HTML format"
       }
     ],
     "github_repository": "mszep/pandoc_resume",
@@ -148,7 +156,7 @@
       "pdf"
     ],
     "document_types": [
-      "dissertation_theis"
+      "dissertation_thesis"
     ],
     "images": [
       {
@@ -175,7 +183,7 @@
       "pdf"
     ],
     "document_types": [
-      "dissertation_theis"
+      "dissertation_thesis"
     ],
     "images": [
       {
@@ -253,7 +261,7 @@
       "pdf"
     ],
     "document_types": [
-      "dissertation_theis"
+      "dissertation_thesis"
     ],
     "images": [
       {
@@ -386,7 +394,8 @@
         "title": "Pandoc Markdown CSS Theme.png"
       }
     ],
-    "github_repository": "jez/pandoc-markdown-css-theme"
+    "github_repository": "jez/pandoc-markdown-css-theme",
+    "example_website": "https://jez.io/pandoc-markdown-css-theme/"
   },
   {
     "id": "pandoc-markdown-book-template",
@@ -438,15 +447,40 @@
       "article",
       "book",
       "presentation",
-      "dissertation_theis"
+      "dissertation_thesis"
     ],
     "images": [
       {
-        "file": "academic-pandoc-template.png",
-        "title": "Academic Pandoc Template PDF output"
+        "file": "article-latex-pdf.png",
+        "title": "Article PDF output (uses LaTeX)"
+      },
+      {
+        "file": "article-docx.png",
+        "title": "Article Word DOCX output"
+      },
+      {
+        "file": "thesis-latex-pdf.png",
+        "title": "Thesis PDF output (uses LaTeX)"
+      },
+      {
+        "file": "thesis-docx.png",
+        "title": "Thesis Word DOCX output"
+      },
+      {
+        "file": "presentation-html.png",
+        "title": "Presentation HTML output (uses reveal.js)"
+      },
+      {
+        "file": "presentation-pdf.png",
+        "title": "Presentation PDF output (uses LaTeX Beamer)"
+      },
+      {
+        "file": "presentation-pptx.png",
+        "title": "Presentation PowerPoint PPTX output"
       }
     ],
-    "github_repository": "maehr/academic-pandoc-template"
+    "github_repository": "maehr/academic-pandoc-template",
+    "website": "https://maehr.github.io/academic-pandoc-template/"
   },
   {
     "id": "nyum",
@@ -500,7 +534,7 @@
       "article",
       "book",
       "presentation",
-      "dissertation_theis"
+      "dissertation_thesis"
     ],
     "images": [
       {
@@ -728,7 +762,7 @@
       "pdf"
     ],
     "document_types": [
-      "dissertation_theis",
+      "dissertation_thesis",
       "homework"
     ],
     "tags": [
@@ -746,7 +780,8 @@
   },
   {
     "id": "panscribe",
-    "title": "PanScribe: Pandoc Templates for Standard Manuscript Format",
+    "title": "PanScribe",
+    "subtitle": "Pandoc Templates for Standard Manuscript Format",
     "authors": [
       {
         "name": "Dylan Kinnett",
@@ -970,7 +1005,7 @@
     "document_types": [
       "article",
       "book",
-      "dissertation_theis"
+      "dissertation_thesis"
     ],
     "tags": [
       "Microsoft Word",
@@ -1267,7 +1302,8 @@
   },
   {
     "id": "pan-am",
-    "title": "Pan Am: Simple CSS for Pandoc",
+    "title": "Pan Am",
+    "subtitle": "Simple CSS for Pandoc",
     "authors": [
       {
         "name": "Benjamin Woodruff",
@@ -1419,8 +1455,12 @@
     ],
     "images": [
       {
-        "file": "pandoc-letter-din5008.png",
+        "file": "letter-minimal.png",
         "title": "Pandoc Letter Template DIN 5008 (Minimal Example)"
+      },
+      {
+        "file": "letter-invoice.png",
+        "title": "Pandoc Letter Template DIN 5008 (Invoice Example)"
       }
     ],
     "github_repository": "benedictdudel/pandoc-letter-din5008"
@@ -1774,16 +1814,30 @@
   },
   {
     "id": "komaletter",
-    "title": "komaletter: Simply Beautiful PDF Letters from Markdown",
+    "title": "komaletter",
+    "subtitle": "Simply Beautiful PDF Letters from Markdown",
     "authors": [
       {
         "name": "Robert Nuske",
         "github": {
           "username": "rnuske"
         }
+      },
+      {
+        "name": "Dirk Eddelbuettel",
+        "github": {
+          "username": "eddelbuettel"
+        }
+      },
+      {
+        "name": "Aaron Wolen",
+        "github": {
+          "username": "aaronwolen"
+        }
       }
     ],
-    "description": "This package is an adaptation of the linl package for international writers. linl itself is based on the pandoc-letter template and extends it for use from R via the rmarkdown package.",
+    "description": "R package for comfortable writing of beautiful PDF letters in Markdown.",
+    "long_description": "Simple letters tend to look very much alike. They are either determined by a standard eg. window envelope style or writer's preferences. Since the layout is fixed, letters can be written perfectly in R Markdown. The KOMA-Script LaTeX Bundle provides layouts for many common window envelope types (German, US, French, Japanese, ...) and the possibility to define your own layout. The komaletter package also provides it's own default letter layout loosely based on DIN 5008B. This package is an adaptation of the linl package for international writers. linl itself is based on the pandoc-letter template and extends it for use from R via the rmarkdown package.",
     "formats": [
       "pdf",
       "latex"
@@ -1795,10 +1849,31 @@
       "Letter",
       "R Markdown"
     ],
+    "icon": "logo.svg",
     "images": [
       {
         "file": "komaletter-with-sections.png",
         "title": "komaletter example with sections"
+      },
+      {
+        "file": "example-0.jpg",
+        "title": "Example 0: This example shows the skeleton you get when you run rmarkdown::draft() or start a letter from the template. It is intended as a starting point for your own letters and comes with a reasonably small set of settings in the YAML header."
+      },
+      {
+        "file": "example-1.jpg",
+        "title": "Example 2: This letter displays some more parameters (eg. lco, signature, signature-before, return-phone, return-email, ps, cc and colorlinks)."
+      },
+      {
+        "file": "example-2.jpg",
+        "title": "Example 2: This letter displays some more parameters (eg. lco, papersize, inline-links)."
+      },
+      {
+        "file": "example-3.jpg",
+        "title": "Example 3: This letter displays some additions needed for example when communicating with German administrations or agencies."
+      },
+      {
+        "file": "example-4.jpg",
+        "title": "Example 4: This example letter includes the parameter return-short which allows for a different, possibly shorter sender’s address to fit in the envelope’s window."
       }
     ],
     "github_repository": "rnuske/komaletter",
@@ -1889,7 +1964,7 @@
       "latex"
     ],
     "document_types": [
-      "dissertation_theis"
+      "dissertation_thesis"
     ],
     "tags": [
       "Augusta University",
@@ -2015,7 +2090,7 @@
     "document_types": [
       "article",
       "book",
-      "dissertation_theis"
+      "dissertation_thesis"
     ],
     "tags": [
       "numbered sections"
