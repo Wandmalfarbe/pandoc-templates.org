@@ -1,6 +1,7 @@
 import TimeAgo from 'javascript-time-ago'
 import en from 'javascript-time-ago/locale/en'
 import htmlmin from "html-minifier";
+import CleanCSS from "clean-css";
 
 TimeAgo.addDefaultLocale(en)
 const timeAgo = new TimeAgo('en-US');
@@ -8,15 +9,16 @@ const timeAgo = new TimeAgo('en-US');
 let dateOptionsLong = {weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'};
 let dateOptionsMedium = {year: 'numeric', month: 'long', day: 'numeric'};
 
-export default function (eleventyConfig) {
+export default function (config) {
 
-    eleventyConfig.addPassthroughCopy("src/css");
-    eleventyConfig.addPassthroughCopy("src/js");
-    eleventyConfig.addPassthroughCopy("src/*.png");
-    eleventyConfig.addPassthroughCopy("src/favicon.*");
-    eleventyConfig.addPassthroughCopy("src/files");
+    config.addPassthroughCopy("src/js");
+    config.addPassthroughCopy("src/*.png");
+    config.addPassthroughCopy("src/favicon.*");
+    config.addPassthroughCopy("src/files");
 
-    eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
+    config.addTemplateFormats('css');
+
+    config.addTransform("htmlmin", function (content, outputPath) {
         if (outputPath.endsWith(".html")) {
             return htmlmin.minify(content, {
                 useShortDoctype: true,
@@ -27,13 +29,25 @@ export default function (eleventyConfig) {
         return content;
     });
 
-    eleventyConfig.addFilter("timeAgo", function (dateInput) {
+    config.addExtension('css', {
+        outputFileExtension: 'css',
+        compile: async (content, outputPath) => {
+            return async () => {
+                if (outputPath.endsWith(".css") && !outputPath.endsWith(".min.css")) {
+                    return new CleanCSS({level: 2}).minify(content).styles;
+                }
+                return content;
+            };
+        }
+    });
+
+    config.addFilter("timeAgo", function (dateInput) {
         if (!dateInput) return "";
         const date = new Date(dateInput);
         return timeAgo.format(date);
     });
 
-    eleventyConfig.addFilter("cssClassTimeAgo", function (dateInput) {
+    config.addFilter("cssClassTimeAgo", function (dateInput) {
         if (!dateInput) return "";
         const date = new Date(dateInput);
         const now = new Date();
@@ -48,7 +62,7 @@ export default function (eleventyConfig) {
         }
     });
 
-    eleventyConfig.addFilter("dateWarning", function (dateInput) {
+    config.addFilter("dateWarning", function (dateInput) {
         if (!dateInput) return "";
         const date = new Date(dateInput);
         const now = new Date();
@@ -57,21 +71,21 @@ export default function (eleventyConfig) {
         return diffInDays > 728;
     });
 
-    eleventyConfig.addFilter("dateNow", function () {
+    config.addFilter("dateNow", function () {
         return new Date().toLocaleString("en-GB", dateOptionsLong);
     });
 
-    eleventyConfig.addFilter("dateToTimestamp", function (dateInput) {
+    config.addFilter("dateToTimestamp", function (dateInput) {
         if (!dateInput) return "";
         return new Date(dateInput).getTime().toString();
     });
 
-    eleventyConfig.addFilter("dateToHumanReadableLong", function (dateInput) {
+    config.addFilter("dateToHumanReadableLong", function (dateInput) {
         if (!dateInput) return "";
         return new Date(dateInput).toLocaleString("en-GB", dateOptionsLong);
     });
 
-    eleventyConfig.addFilter("dateToHumanReadableMedium", function (dateInput) {
+    config.addFilter("dateToHumanReadableMedium", function (dateInput) {
         if (!dateInput) return "";
         return new Date(dateInput).toLocaleString("en-GB", dateOptionsMedium);
     });

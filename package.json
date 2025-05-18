@@ -4,8 +4,9 @@
   "private": true,
   "type": "module",
   "scripts": {},
-    "devDependencies": {
+  "devDependencies": {
     "@11ty/eleventy": "^3.0.0-alpha.11",
+    "clean-css": "^5.3.3",
     "html-minifier": "^4.0.0",
     "javascript-time-ago": "^2.5.11"
   }
