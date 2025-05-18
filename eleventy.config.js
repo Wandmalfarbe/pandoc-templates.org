@@ -48,6 +48,15 @@ export default function (eleventyConfig) {
         }
     });
 
+    eleventyConfig.addFilter("dateWarning", function (dateInput) {
+        if (!dateInput) return "";
+        const date = new Date(dateInput);
+        const now = new Date();
+        const diffInDays = Math.floor(Math.abs(now - date) / 86400000); // milliseconds in a day
+
+        return diffInDays > 728;
+    });
+
     eleventyConfig.addFilter("dateNow", function () {
         return new Date().toLocaleString("en-GB", dateOptionsLong);
     });

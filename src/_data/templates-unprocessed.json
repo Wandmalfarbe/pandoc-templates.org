@@ -1555,7 +1555,8 @@
   },
   {
     "id": "markdeck",
-    "title": "MarkDeck",
+    "title": "markdeck",
+    "subtitle": "presentations as code",
     "authors": [
       {
         "name": "Arne Hilmann",
