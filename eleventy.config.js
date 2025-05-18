@@ -11,6 +11,8 @@ let dateOptionsMedium = {year: 'numeric', month: 'long', day: 'numeric'};
 
 export default function (config) {
 
+    config.addPassthroughCopy("src/css/fonts");
+    config.addPassthroughCopy("*.woff2");
     config.addPassthroughCopy("src/js");
     config.addPassthroughCopy("src/*.png");
     config.addPassthroughCopy("src/favicon.*");
