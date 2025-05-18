@@ -14,6 +14,13 @@ eleventyComputed:
         <div class="alert alert-warning" role="alert">
             The GitHub repository of this template has been archived.
         </div>
+    {% else %}
+        {% assign dateWarning = template.github_repository_json.pushed_at | dateWarning %}
+        {% if dateWarning %}
+            <div class="alert alert-warning" role="alert">
+                This template has not been updated for more than 2 years.
+            </div>
+        {% endif %}
     {% endif %}
 
     <div class="row">
@@ -23,8 +30,7 @@ eleventyComputed:
             {% endif %}
 
             <h1 itemprop="name">
-                {{ template.title }}
-                {% if template.subtitle %}: <small class="subtitle">{{ template.subtitle }}</small>{% endif %}
+                {{ template.title }}{% if template.subtitle %}: <small class="subtitle">{{ template.subtitle }}</small>{% endif %}
             </h1>
 
             <h5 class="mb-3 text-body-secondary">
@@ -47,6 +53,9 @@ eleventyComputed:
                     {% if template.website %}
                         <a itemprop="url" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary" href="{{ template.website }}"><i class="bi-globe"></i> Website</a>
                     {% endif %}
+                    {% if template.example_url %}
+                        <a itemprop="url" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary" href="{{ template.example_url }}"><i class="bi-file-earmark-richtext"></i> Example</a>
+                    {% endif %}
                 </div>
                 <div class="text-end">
                     {% for format in template.formats %}<span class="badge text-bg-secondary format-{{ format.id }}">{{ format.name }}</span>{% endfor %}
@@ -57,57 +66,57 @@ eleventyComputed:
 
             <ul class="list-group list-group-flush small">
                 <li class="list-group-item ps-0 pe-0 text-body-secondary d-flex justify-content-between align-items-center">
-      <span class="fw-semibold me-2">
-        <i class="me-1 bi bi-clock" style="font-size: 1.1rem;"></i> Last Update
-      </span>
+                    <span class="fw-semibold me-2">
+                        <i class="me-1 bi bi-clock" style="font-size: 1.1rem;"></i> Last Update
+                    </span>
                     {% if template.github_repository_json.pushed_at %}
                         <span title="{{ template.github_repository_json.pushed_at | dateToHumanReadableLong }}" class="{{ template.github_repository_json.pushed_at | cssClassTimeAgo }}">
-          {{ template.github_repository_json.pushed_at | timeAgo }}
-        </span>
+                            {{ template.github_repository_json.pushed_at | timeAgo }}
+                        </span>
                     {% endif %}
                     {% if template.last_update %}
                         <span title="{{ template.last_update | dateToHumanReadableLong }}" class="{{ template.last_update | cssClassTimeAgo }}">
-          {{ template.last_update | timeAgo }}
-        </span>
+                            {{ template.last_update | timeAgo }}
+                        </span>
                     {% endif %}
                 </li>
                 {% if template.github_repository_json.stargazers_count %}
                     <li class="list-group-item ps-0 pe-0 text-body-secondary d-flex justify-content-between align-items-center">
-      <span class="fw-semibold me-2">
-        <i class="me-1 bi bi-star" style="font-size: 1.1rem;"></i> Stars
-      </span>
+                        <span class="fw-semibold me-2">
+                            <i class="me-1 bi bi-star" style="font-size: 1.1rem;"></i> Stars
+                        </span>
                         <span class="text-end">{{ template.github_repository_json.stargazers_count }} stars</span>
                     </li>
                 {% endif %}
                 {% if template.github_repository_json.forks_count %}
                     <li class="list-group-item ps-0 pe-0 text-body-secondary d-flex justify-content-between align-items-center">
-      <span class="fw-semibold me-2">
-        <i class="me-1 bi bi-signpost-split" style="font-size: 1.1rem;"></i> Forks
-      </span>
+                        <span class="fw-semibold me-2">
+                            <i class="me-1 bi bi-signpost-split" style="font-size: 1.1rem;"></i> Forks
+                        </span>
                         <span class="text-end">{{ template.github_repository_json.forks_count }} forks</span>
                     </li>
                 {% endif %}
                 {% if template.github_repository_json.fork %}
                     <li class="list-group-item ps-0 pe-0 text-body-secondary d-flex justify-content-between align-items-center">
-      <span class="fw-semibold me-2">
-        <i class="me-1 bi bi-signpost-split" style="font-size: 1.1rem;"></i> Is Fork
-      </span>
+                        <span class="fw-semibold me-2">
+                            <i class="me-1 bi bi-signpost-split" style="font-size: 1.1rem;"></i> Is Fork
+                        </span>
                         <span class="text-end">Yes</span>
                     </li>
                 {% endif %}
                 {% if template.github_repository_json.license %}
                     <li class="list-group-item ps-0 pe-0 text-body-secondary d-flex justify-content-between align-items-center">
-        <span class="fw-semibold me-2">
-          <i class="me-1 bi bi-file-medical" style="font-size: 1.1rem;"></i> License
-        </span>
+                        <span class="fw-semibold me-2">
+                            <i class="me-1 bi bi-file-medical" style="font-size: 1.1rem;"></i> License
+                        </span>
                         <span class="text-end" title="{{ template.github_repository_json.license.name | escape }}">{{ template.github_repository_json.license.spdx_id }}</span>
                     </li>
                 {% endif %}
                 {% if template.github_repository_releases_json != blank %}
                     <li class="list-group-item ps-0 pe-0 text-body-secondary d-flex justify-content-between align-items-center">
-        <span class="fw-semibold me-2">
-          <i class="me-1 bi bi-box-seam" style="font-size: 1.1rem;"></i> Releases
-        </span>
+                        <span class="fw-semibold me-2">
+                            <i class="me-1 bi bi-box-seam" style="font-size: 1.1rem;"></i> Releases
+                        </span>
                         <span class="text-end">{{ template.github_repository_releases_json.size }} releases</span>
                     </li>
                 {% endif %}

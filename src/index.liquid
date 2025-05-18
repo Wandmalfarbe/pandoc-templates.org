@@ -32,7 +32,7 @@ title: pandoc-templates.org
       </div>
       <div class="card-body overflow-fadeout overflow-hidden">
         <div class="ratio ratio-4x3">
-          <div><a class="invisible-link" href="template/{{ template.id }}">
+          <a class="invisible-link" href="template/{{ template.id }}">
             {% if template.icon %}
               <img class="icon" src="/files/{{ template.id }}/{{ template.icon }}" alt="Icon">
             {% endif %}
@@ -53,7 +53,7 @@ title: pandoc-templates.org
               {% endfor %}
             </h6>
             <p class="card-text description" itemprop="description">{{ template.description }}</p>
-          </a></div>
+          </a>
         </div>
       </div>
       <div class="card-body">
@@ -73,15 +73,11 @@ title: pandoc-templates.org
                 <i class="bi-github"></i> GitHub
               </a>
             {% endif %}
-            {% if template.website %}
-              <a itemprop="url"
-                 target="_blank"
-                 rel="noopener noreferrer"
-                 class="btn btn-sm btn-outline-secondary"
-                 href="{{ template.website }}">
-                <i class="bi-globe"></i> Website
-              </a>
-            {% endif %}
+            <a itemprop="url"
+               class="btn btn-sm btn-outline-secondary"
+               href="/template/{{ template.id }}">
+              <i class="bi-info-circle"></i> Details
+            </a>
           </div>
           {% if template.github_repository_json.stargazers_count %}
             <small class="text-body-secondary text-end">{{ template.github_repository_json.stargazers_count }} Stars</small>
