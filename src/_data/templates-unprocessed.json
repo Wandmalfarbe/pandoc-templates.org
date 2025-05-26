@@ -1740,8 +1740,32 @@
     ],
     "images": [
       {
-        "file": "yuki-html.png",
+        "file": "html-content.png",
         "title": "Yuki HTML"
+      },
+      {
+        "file": "pdf-content.png",
+        "title": "Yuki PDF"
+      },
+      {
+        "file": "pdf-toc.png",
+        "title": "Yuki PDF: Table of Contents (TOC)"
+      },
+      {
+        "file": "pdf-boxes.png",
+        "title": "Yuki PDF: Boxes"
+      },
+      {
+        "file": "pdf-chapter.png",
+        "title": "Yuki PDF: Chapter"
+      },
+      {
+        "file": "pdf-images-and-columns.png",
+        "title": "Yuki PDF: Images and Columns"
+      },
+      {
+        "file": "pdf-tables.png",
+        "title": "Yuki PDF: Tables"
       }
     ],
     "github_repository": "yuki/pandoc-templates"
