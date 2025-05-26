@@ -78,7 +78,7 @@
     ],
     "pandoc_version": "3",
     "github_repository": "Wandmalfarbe/pandoc-latex-template",
-    "example_url": "Wandmalfarbe/pandoc-latex-template/tree/master/examples"
+    "example_url": "https://github.com/Wandmalfarbe/pandoc-latex-template/tree/master/examples"
   },
   {
     "id": "pandoc-letter",
@@ -114,7 +114,7 @@
       }
     ],
     "github_repository": "aaronwolen/pandoc-letter",
-    "example_url": "aaronwolen/pandoc-letter/tree/master/example"
+    "example_url": "https://github.com/aaronwolen/pandoc-letter/tree/master/example"
   },
   {
     "id": "pandoc-resume",
@@ -360,7 +360,7 @@
       }
     ],
     "github_repository": "periodicpoint/arabica",
-    "example_url": "periodicpoint/arabica/tree/master/examples"
+    "example_url": "https://github.com/periodicpoint/arabica/tree/master/examples"
   },
   {
     "id": "robusta",
