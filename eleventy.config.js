@@ -1,7 +1,8 @@
 import TimeAgo from 'javascript-time-ago'
 import en from 'javascript-time-ago/locale/en'
-import htmlmin from "html-minifier";
 import CleanCSS from "clean-css";
+import {eleventyImageTransformPlugin} from "@11ty/eleventy-img";
+import {minify} from "html-minifier-terser";
 
 TimeAgo.addDefaultLocale(en)
 const timeAgo = new TimeAgo('en-US');
@@ -10,6 +11,8 @@ let dateOptionsLong = {weekday: 'long', year: 'numeric', month: 'long', day: 'nu
 let dateOptionsMedium = {year: 'numeric', month: 'long', day: 'numeric'};
 
 export default function (config) {
+
+    config.addPlugin(eleventyImageTransformPlugin);
 
     config.addPassthroughCopy("src/css/fonts");
     config.addPassthroughCopy("*.woff2");
@@ -20,12 +23,13 @@ export default function (config) {
 
     config.addTemplateFormats('css');
 
-    config.addTransform("htmlmin", function (content, outputPath) {
+    config.addTransform("html-minify", async function (content, outputPath) {
         if (outputPath.endsWith(".html")) {
-            return htmlmin.minify(content, {
-                useShortDoctype: true,
+            return await minify(content, {
+                collapseBooleanAttributes: true,
+                collapseWhitespace: true,
                 removeComments: true,
-                collapseWhitespace: true
+                maxLineLength: 1000
             });
         }
         return content;

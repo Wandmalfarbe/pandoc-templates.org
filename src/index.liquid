@@ -14,27 +14,30 @@ title: pandoc-templates.org
        itemscope
        itemtype="https://schema.org/SoftwareSourceCode">
     <div class="card shadow-sm">
-      <div class="ratio ratio-A4">
-        <a href="template/{{ template.id }}">
+        <a class="ratio ratio-A4" href="template/{{ template.id }}">
           {% if template.images[0].file %}
+            <!-- https://github.com/twbs/bootstrap/issues/32991 -->
             <img loading="lazy"
                  itemprop="image"
-                 class="card-img-top object-fit-contain"
+                 eleventy:widths="1000"
+                 eleventy:pictureattr:class="ratio card-img-top"
+                 class="object-fit-contain"
                  src="/files/{{ template.id }}/{{ template.images[0].file }}"
                  alt="{{ template.images[0].title | default: 'Preview' }}">
           {% else %}
             <img loading="lazy"
-                 class="card-img-top object-fit-contain"
+                 eleventy:widths="1000"
+                 eleventy:pictureattr:class="ratio card-img-top"
+                 class="object-fit-contain"
                  src="/files/placeholder/placeholder.jpg"
                  alt="Placeholder">
           {% endif %}
         </a>
-      </div>
       <div class="card-body overflow-fadeout overflow-hidden">
         <div class="ratio ratio-4x3">
           <a class="invisible-link" href="template/{{ template.id }}">
             {% if template.icon %}
-              <img class="icon" src="/files/{{ template.id }}/{{ template.icon }}" alt="Icon">
+              <img eleventy:ignore loading="lazy" class="icon" src="/files/{{ template.id }}/{{ template.icon }}" alt="Icon">
             {% endif %}
             {% if template.github_repository_json.archived %}
               <span class="badge text-bg-warning">Archived</span>
@@ -47,9 +50,7 @@ title: pandoc-templates.org
                 <span class="author"
                       itemprop="creator"
                       itemscope
-                      itemtype="https://schema.org/Person">
-                  {{ author.github.username }} (<span itemprop="name">{{ author.name }}</span>)
-                </span>
+                      itemtype="https://schema.org/Person">{{ author.github.username }} (<span itemprop="name">{{ author.name }}</span>)</span>
               {% endfor %}
             </h6>
             <p class="card-text description" itemprop="description">{{ template.description }}</p>

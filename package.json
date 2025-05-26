@@ -6,8 +6,10 @@
   "scripts": {},
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0-alpha.11",
+    "@11ty/eleventy-img": "^6.0.4",
     "clean-css": "^5.3.3",
-    "html-minifier": "^4.0.0",
-    "javascript-time-ago": "^2.5.11"
+    "javascript-time-ago": "^2.5.11",
+    "shufflejs": "^6.1.1",
+    "html-minifier-terser": "^7.2.0"
   }
 }

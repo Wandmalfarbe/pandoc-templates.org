@@ -12,7 +12,7 @@ Install dependencies and build:
 
 ```
 npm ci
-grunt
+bash ./build.sh
 ```
 
 ## Notes

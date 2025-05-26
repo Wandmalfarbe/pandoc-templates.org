@@ -26,7 +26,7 @@ eleventyComputed:
     <div class="row">
         <div class="col-12 col-md-8">
             {% if template.icon %}
-                <img class="icon icon-large" src="/files/{{ template.id }}/{{ template.icon }}" alt="Icon">
+                <img eleventy:ignore class="icon icon-large" src="/files/{{ template.id }}/{{ template.icon }}" alt="Icon">
             {% endif %}
 
             <h1 itemprop="name">
@@ -134,6 +134,7 @@ eleventyComputed:
                            target="_blank"
                            rel="noopener">
                             <img loading="lazy" itemprop="image" class="img-fluid shadow detail-image mb-3"
+                                 eleventy:widths="1000"
                                  src="/files/{{ template.id }}/{{ image.file }}"
                                  alt="{% if image.title %}{{ image.title }}{% else %}Preview{% endif %}">
                         </a>
