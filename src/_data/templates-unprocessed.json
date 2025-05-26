@@ -33,7 +33,47 @@
       },
       {
         "file": "images-and-tables.png",
-        "title": "images and tables"
+        "title": "Images and Tables"
+      },
+      {
+        "file": "book.png",
+        "title": "Book"
+      },
+      {
+        "file": "boxes-with-pandoc-latex-environment-and-awesomebox.png",
+        "title": "Custom boxes with the pandoc filter 'pandoc-latex-environment' and the LaTeX package 'awesomebox'"
+      },
+      {
+        "file": "boxes-with-pandoc-latex-environment-and-tcolorbox.png",
+        "title": "Custom boxes with the pandoc filter 'pandoc-latex-environment' and the LaTeX package 'tcolorbox'"
+      },
+      {
+        "file": "code-blocks-listings.png",
+        "title": "Code blocks with the LaTeX package 'listings'"
+      },
+      {
+        "file": "code-blocks-without-listings.png",
+        "title": "Code blocks without the LaTeX package 'listings'. This example uses the builtin pandoc highlighter."
+      },
+      {
+        "file": "columns.png",
+        "title": "Columns"
+      },
+      {
+        "file": "language-chinese.png",
+        "title": "Chinese language PDF produced with XeLaTeX and Hiragino Sans as the main font"
+      },
+      {
+        "file": "page-background.png",
+        "title": "A PDF as a page background"
+      },
+      {
+        "file": "title-page-background.png",
+        "title": "Title page with a custom background"
+      },
+      {
+        "file": "watermark.png",
+        "title": "Watermark"
       }
     ],
     "pandoc_version": "3",
