@@ -1248,6 +1248,38 @@
     "github_repository": "ScotGovAnalysis/sgtemplates"
   },
   {
+    "id": "kj-sh604-pandoc-resume",
+    "title": "pandoc-resume",
+    "authors": [
+      {
+        "name": "Kyle Javier",
+        "github": {
+          "username": "kj-sh604"
+        }
+      }
+    ],
+    "description": "Automation script to easily create multiple formats of your résumé from a single markdown file. A Makefile is provided so that you can compile it into both a LaTeX PDF and an HTML file using pandoc.",
+    "formats": [
+      "latex",
+      "pdf",
+      "html"
+    ],
+    "document_types": [
+      "cv_resume"
+    ],
+    "images": [
+      {
+        "file": "pdf-output-example.png",
+        "title": "PDF Output Example: Custom LaTeX template (template.tex) used for PDF generation."
+      },
+      {
+        "file": "html-output-example.png",
+        "title": "HTML Output Example: Responsive web design, custom background, and div settings with style.css. Automatically generated 'table of contents' transformed into a menu bar with dropdown subsections. Longer content sections are hidden and revealed on mouseover (or with a single-tap on mobile)."
+      }
+    ],
+    "github_repository": "kj-sh604/pandoc-resume"
+  },
+  {
     "id": "nih-grant-proposal-template",
     "title": "NIH Grant Proposal Template",
     "authors": [
