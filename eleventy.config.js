@@ -2,6 +2,7 @@ import TimeAgo from 'javascript-time-ago'
 import en from 'javascript-time-ago/locale/en'
 import CleanCSS from "clean-css";
 import {eleventyImageTransformPlugin} from "@11ty/eleventy-img";
+import sitemap from "@quasibit/eleventy-plugin-sitemap";
 import {minify} from "html-minifier-terser";
 
 TimeAgo.addDefaultLocale(en)
@@ -13,6 +14,11 @@ let dateOptionsMedium = {year: 'numeric', month: 'long', day: 'numeric'};
 export default function (config) {
 
     config.addPlugin(eleventyImageTransformPlugin);
+    config.addPlugin(sitemap, {
+        sitemap: {
+            hostname: "https://pandoc-templates.org",
+        },
+    });
 
     config.addPassthroughCopy("src/css/fonts");
     config.addPassthroughCopy("*.woff2");

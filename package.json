@@ -3,13 +3,20 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "scripts": {},
+  "scripts": {
+    "clean": "rm -rf dist",
+    "start": "npx @11ty/eleventy --serve",
+    "build": "npx @11ty/eleventy",
+    "build-full": "./build.sh",
+    "serve-build": "npx http-server dist"
+  },
   "devDependencies": {
-    "@11ty/eleventy": "^3.0.0-alpha.11",
+    "@11ty/eleventy": "^3.1.2",
     "@11ty/eleventy-img": "^6.0.4",
+    "@quasibit/eleventy-plugin-sitemap": "^2.2.0",
     "clean-css": "^5.3.3",
+    "html-minifier-terser": "^7.2.0",
     "javascript-time-ago": "^2.5.11",
-    "shufflejs": "^6.1.1",
-    "html-minifier-terser": "^7.2.0"
+    "shufflejs": "^6.1.2"
   }
 }
