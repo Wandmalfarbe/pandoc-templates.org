@@ -26,7 +26,11 @@
 
     <meta name="application-name" content="Pandoc Templates">
     <meta name="apple-mobile-web-app-title" content="Pandoc Templates">
-    <meta name="description" content="Pandoc templates for PDF, LaTeX, HTML and Word. Easily convert documents with customizable templates for reports, articles, and more.">
+    {% if description and description != "" %}
+        <meta name="description" content="{{ description | truncate: 160 | escape }}">
+    {% else %}
+        <meta name="description" content="Pandoc templates for PDF, LaTeX, HTML and Word. Easily convert documents with customizable templates for reports, articles, and more.">
+    {% endif %}
     <meta name="keywords" content="pandoc, template, LaTeX, HTML, PDF, Word, DOCX, report, thesis, article, dissertation, resume">
 
     <meta name="robots" content="index, follow">
