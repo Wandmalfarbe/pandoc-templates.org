@@ -1402,6 +1402,54 @@
     "github_repository": "corybrunson/NIH-proposal-template"
   },
   {
+    "id": "daggerheart-template",
+    "title": "daggerheart-template",
+    "subtitle": "Daggerheart Campaign PDF Generator",
+    "authors": [
+      {
+        "name": "Mikel Martín Corrales",
+        "github": {
+          "username": "roland04"
+        }
+      }
+    ],
+    "description": "This project provides a modern workflow to create beautiful, two-column PDF documents for tabletop RPG campaigns (like Daggerheart) using Markdown. It uses a custom LaTeX template, Pandoc Lua filters, and an organized folder structure to make the process easy—even for users with no LaTeX experience.",
+    "formats": [
+      "latex",
+      "pdf"
+    ],
+    "document_types": [
+      "book"
+    ],
+    "images": [
+      {
+        "file": "chapter.png",
+        "title": "A Chapter page"
+      },
+      {
+        "file": "title-page.png",
+        "title": "A title page with subtitle and author"
+      },
+      {
+        "file": "table-of-contents.png",
+        "title": "A table of contents page"
+      },
+      {
+        "file": "content.png",
+        "title": "A chapter page"
+      },
+      {
+        "file": "content-2.png",
+        "title": "A chapter page"
+      },
+      {
+        "file": "content-table.png",
+        "title": "A page with a table spanning two columns"
+      }
+    ],
+    "github_repository": "roland04/daggerheart-template"
+  },
+  {
     "id": "nidrissi-exam-template",
     "title": "exam-template",
     "authors": [
