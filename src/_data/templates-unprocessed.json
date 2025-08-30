@@ -991,6 +991,34 @@
     ],
     "github_repository": "diversen/pandoc-bootstrap-adaptive-template"
   },
+    {
+    "id": "aas-markdown",
+    "title": "aas-markdown",
+    "subtitle": "Pandoc Build Scripts for AASTeX",
+    "authors": [
+      {
+        "name": "Joel Ong",
+        "github": {
+          "username": "darthoctopus"
+        }
+      }
+    ],
+    "description": "Template directory for authoring AASTeX-formatted journal articles using Pandoc and pdflatex",
+    "formats": [
+      "latex",
+      "pdf"
+    ],
+    "document_types": [
+      "article"
+    ],
+    "images": [
+      {
+        "file": "aas-markdown-pdf.png",
+        "title": "An example PDF article rendered with aas-markdown"
+      }
+    ],
+    "github_repository": "darthoctopus/aas-markdown"
+  },
   {
     "id": "tonyblundell-pandoc-bootstrap-template",
     "title": "pandoc-bootstrap-template",
