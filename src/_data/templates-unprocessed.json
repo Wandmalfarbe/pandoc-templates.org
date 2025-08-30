@@ -1295,6 +1295,7 @@
       "article"
     ],
     "tags": [
+      "classless-css",
       "new.css"
     ],
     "images": [
@@ -1305,6 +1306,37 @@
     ],
     "github_repository": "kedama-t/pandoc-newcss",
     "example_url": "https://kedama-t.github.io/pandoc-newcss/"
+  },
+  {
+    "id": "pandoc-water-css",
+    "title": "pandoc-water.css",
+    "authors": [
+      {
+        "name": "ProbablePrime",
+        "github": {
+          "username": "ProbablePrime"
+        }
+      }
+    ],
+    "description": "pandoc template, that just applies water.css to your HTML output. water.css is a classless CSS framework and a collection of CSS styles to make simple websites just a little nicer.",
+    "formats": [
+      "html"
+    ],
+    "document_types": [
+      "website",
+      "article"
+    ],
+    "tags": [
+      "classless-css",
+      "water.css"
+    ],
+    "images": [
+      {
+        "file": "pandoc-water-css-html.png",
+        "title": "pandoc-water.css example HTML"
+      }
+    ],
+    "github_repository": "ProbablePrime/pandoc-water.css"
   },
   {
     "id": "sgtemplates",
