@@ -686,6 +686,33 @@
     "example_website": "https://andros21.github.io/pandoc-slides"
   },
   {
+    "id": "smart-resume",
+    "title": "SmartResume",
+    "authors": [
+      {
+        "name": "He 'Jason' Sun",
+        "github": {
+          "username": "wushanyun64"
+        }
+      }
+    ],
+    "description": "A smart and elegant tool to convert Markdown-based resumes to beautifully formatted PDFs using Pandoc and LaTeX templates.",
+    "formats": [
+      "latex",
+      "pdf"
+    ],
+    "document_types": [
+      "cv_resume"
+    ],
+    "images": [
+      {
+        "file": "smart-resume-pdf.png",
+        "title": "An example PDF resume rendered with SmartResume"
+      }
+    ],
+    "github_repository": "wushanyun64/SmartResume"
+  },
+  {
     "id": "obsidian-htmlexport",
     "title": "obsidian-htmlexport",
     "authors": [
