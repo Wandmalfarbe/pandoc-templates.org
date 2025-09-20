@@ -84,6 +84,16 @@ eleventyComputed:
                         </span>
                     {% endif %}
                 </li>
+                <li class="list-group-item ps-0 pe-0 text-body-secondary d-flex justify-content-between align-items-center">
+                    <span class="fw-semibold me-2">
+                        <i class="me-1 bi bi-plus-square" style="font-size: 1.1rem;"></i> Created at
+                    </span>
+                    {% if template.github_repository_json.created_at %}
+                        <span title="{{ template.github_repository_json.created_at | dateToHumanReadableLong }}">
+                            {{ template.github_repository_json.created_at | timeAgo }}
+                        </span>
+                    {% endif %}
+                </li>
                 {% if template.github_repository_json.stargazers_count %}
                     <li class="list-group-item ps-0 pe-0 text-body-secondary d-flex justify-content-between align-items-center">
                         <span class="fw-semibold me-2">

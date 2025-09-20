@@ -9,6 +9,7 @@ tags: sitemap
        data-stars="{{ template.github_repository_json.stargazers_count }}"
        data-releases="{% if template.github_repository_releases_json != blank %}{{ template.github_repository_releases_json.size }}{% endif %}"
        data-last-update="{{ template.github_repository_json.pushed_at | dateToTimestamp }}"
+       data-created-at="{{ template.github_repository_json.created_at | dateToTimestamp }}"
        data-tags="{{ template.tags }}"
        data-formats="{% for format in template.formats %}{{ format.id }} {% endfor %}"
        data-document-types="{% for doc in template.document_types %}{{ doc }} {% endfor %}"

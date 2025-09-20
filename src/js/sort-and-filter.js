@@ -30,6 +30,14 @@ function handleSortChange(event) {
         return lastUpdate;
     }
 
+    function sortByCreatedAt(element) {
+        let createdAt = parseInt(element.dataset.createdAt);
+        if (createdAt === undefined || isNaN(createdAt)) {
+            createdAt = 0;
+        }
+        return createdAt;
+    }
+
     function sortByStars(element) {
         let stars = parseInt(element.dataset.stars);
         if (stars === undefined || isNaN(stars)) {
@@ -65,6 +73,11 @@ function handleSortChange(event) {
         options = {
             reverse: true,
             by: sortByLastUpdate,
+        };
+    } else if (value === 'created-at') {
+        options = {
+            reverse: true,
+            by: sortByCreatedAt,
         };
     } else if (value === 'title') {
         options = {
