@@ -448,8 +448,9 @@
         }
       }
     ],
-    "description": " A template for creating epub books from markdown using pandoc.",
+    "description": "A template for creating epub books from markdown using pandoc.",
     "formats": [
+      "epub",
       "html"
     ],
     "document_types": [
