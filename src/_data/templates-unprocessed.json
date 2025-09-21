@@ -155,31 +155,6 @@
     "example_url": "https://mszep.github.io/pandoc_resume/"
   },
   {
-    "id": "pdf-slides-and-handouts-using-pandoc-and-beamer",
-    "title": "PDF slides and handouts using Pandoc and Beamer",
-    "authors": [
-      {
-        "name": "Lincoln Mullen"
-      }
-    ],
-    "description": "Files to create slides and handouts from the same Markdown files using Pandoc and a custom Beamer template.",
-    "formats": [
-      "latex",
-      "pdf"
-    ],
-    "document_types": [
-      "presentation"
-    ],
-    "images": [
-      {
-        "file": "beamer.png",
-        "title": "Preview 1"
-      }
-    ],
-    "last_update": "2014-08-10T09:49:00Z",
-    "website": "https://gist.github.com/lmullen/c3d4c7883f081ed8692a"
-  },
-  {
     "id": "thesis-markdown-pandoc",
     "title": "thesis-markdown-pandoc",
     "authors": [
