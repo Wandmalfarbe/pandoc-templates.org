@@ -1,4 +1,8 @@
+<img src="icon.png" align="right" height="60"/>
+
 # Pandoc Templates
+
+Source code for https://pandoc-templates.org
 
 ##  Build
 
