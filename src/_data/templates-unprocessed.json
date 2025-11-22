@@ -2040,6 +2040,7 @@
   {
     "id": "linl",
     "title": "linl",
+    "subtitle": "Linl Is Not Letter",
     "authors": [
       {
         "name": "Martin Schrön",
@@ -2055,7 +2056,7 @@
         }
       }
     ],
-    "description": "Linl Is Not Letter -- Markdown-based LaTeX Letter Template. This package leans on earlier work by Aaron Wolen in his pandoc-letter repository, and extends it for use from R via the rmarkdown package.",
+    "description": "A Markdown-based LaTeX Letter Template. This package leans on earlier work by Aaron Wolen in his pandoc-letter repository, and extends it for use from R via the rmarkdown package.",
     "formats": [
       "pdf",
       "latex"
