@@ -588,6 +588,34 @@
     "github_repository": "universvm/obsidian-pandoc-templates"
   },
   {
+    "id": "academicl",
+    "title": "AcademiCL",
+    "subtitle": "Academic Cover Letter",
+    "authors": [
+      {
+        "name": "Amar Al-Zubaidi",
+        "github": {
+          "username": "amarz45"
+        }
+      }
+    ],
+    "description": "The AcademiCL template helps you create academic cover letters using Markdown or R Markdown with pandoc.",
+    "formats": [
+      "latex",
+      "pdf"
+    ],
+    "document_types": [
+      "letter"
+    ],
+    "images": [
+      {
+        "file": "academic-cover-letter-example.png",
+        "title": "Academic Cover Letter Example"
+      }
+    ],
+    "github_repository": "amarz45/academicl"
+  },
+  {
     "id": "obsidian-pandoc-templates-neurips-template",
     "title": "obsidian-pandoc-templates Neurips",
     "authors": [
