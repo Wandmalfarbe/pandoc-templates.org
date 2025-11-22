@@ -127,7 +127,7 @@
         }
       }
     ],
-    "description": "",
+    "description": "The Markdown Resume template lets you write your résumé in plain Markdown and convert it to PDF or HTML using pandoc. It offers a simple build process, either locally or through Docker. The setup is lightweight, making it easy to maintain and update your résumé over time.",
     "formats": [
       "html",
       "pdf"
