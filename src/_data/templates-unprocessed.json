@@ -155,6 +155,33 @@
     "example_url": "https://mszep.github.io/pandoc_resume/"
   },
   {
+    "id": "ieee-pandoc-template",
+    "title": "IEEE Paper Template for Pandoc",
+    "authors": [
+      {
+        "name": "Santos Gallegos",
+        "github": {
+          "username": "stsewd"
+        }
+      }
+    ],
+    "description": "The IEEE Paper Template for Pandoc is a LaTeX-based template that helps create IEEE-compliant papers from markdown files. It formats key sections like the title, abstract, and references according to IEEE standards. This template simplifies the process of preparing papers for IEEE conferences and journals.",
+    "formats": [
+      "latex",
+      "pdf"
+    ],
+    "document_types": [
+      "paper"
+    ],
+    "images": [
+      {
+        "file": "paper-example.png",
+        "title": "Paper Example"
+      }
+    ],
+    "github_repository": "stsewd/ieee-pandoc-template"
+  },
+  {
     "id": "thesis-markdown-pandoc",
     "title": "thesis-markdown-pandoc",
     "authors": [
