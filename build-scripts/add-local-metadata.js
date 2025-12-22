@@ -1,4 +1,4 @@
-import fs from 'fs';
+import fs from 'node:fs';
 
 const pandocTemplatesData = fs.readFileSync('./src/_data/templates.json', {encoding: 'utf8', flag: 'r'});
 const outputFormatsData = fs.readFileSync('./src/_data/formats.json', {encoding: 'utf8', flag: 'r'});

@@ -1,4 +1,4 @@
-import fs from 'fs';
+import fs from 'node:fs';
 
 let pandocTemplates = JSON.parse(fs.readFileSync('./src/_data/templates-unprocessed.json', {encoding: 'utf8', flag: 'r'}));
 
@@ -12,6 +12,19 @@ const httpOptions = {
         "Authorization": `Bearer ${process.env.GH_ACCESS_TOKEN}`,
         "X-GitHub-Api-Version": "2022-11-28"
     }
+}
+
+async function checkGithubAuth() {
+    const res = await fetch('https://api.github.com/user', httpOptions);
+    if (res.status === 401) {
+        console.error('GitHub authentication failed: invalid or expired token');
+        process.exit(1);
+    }
+    if (!res.ok) {
+        console.error(`GitHub auth check failed: ${res.status} ${res.statusText}`);
+        process.exit(1);
+    }
+    await res.json();
 }
 
 async function downloadMetadata(pandocTemplates) {
@@ -29,11 +42,12 @@ async function fetchGithubJson(url) {
     if (response.ok) {
         return await response.json();
     }
-    console.log(`Error retrieving response from '${url}'`);
-    console.log(response);
+    console.error(`Error retrieving response from '${url}'`);
+    console.error(response);
 }
 
 (async () => {
+    await checkGithubAuth()
     await downloadMetadata(pandocTemplates)
 })();
 
