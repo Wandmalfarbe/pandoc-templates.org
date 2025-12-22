@@ -56,6 +56,21 @@
     margin-top: -3px;
     margin-right: 8px;
 }
+.logo-dark {
+    display: none;
+}
+[data-bs-theme="dark"] .logo-light {
+    display: none;
+}
+[data-bs-theme="dark"] .logo-dark {
+    display: inline;
+}
+[data-bs-theme="light"] .logo-dark {
+    display: none;
+}
+[data-bs-theme="light"] .logo-light {
+    display: inline;
+}
 
 /*
  * Filter and search
