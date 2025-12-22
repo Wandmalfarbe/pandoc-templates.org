@@ -1,2 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="512" height="512" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><rect x="40" y="40" width="430" height="430" ry="215" fill="#fff"/><path d="m256 6c-137.72 0-250 112.28-250 250s112.28 250 250 250 250-112.28 250-250-112.28-250-250-250zm0 60c105.29 0 190 84.711 190 190s-84.711 190-190 190-190-84.711-190-190 84.711-190 190-190zm-91 64a30 30 0 0 0-30 30 30 30 0 0 0 30 30h115 30c19.909 0 35 15.091 35 35s-15.091 35-35 35h-30v25 35h30c52.111 0 95-42.889 95-95s-42.889-95-95-95h-30-115zm-5 130v120a30 30 0 0 0 30 30 30 30 0 0 0 30-30v-60-35-25h-60z" fill="#003f7d" stroke-linecap="round"/></svg>
+<svg width="512" height="512" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+	  <style>
+    @media (prefers-color-scheme: dark) {
+      path {
+        fill: white;
+      }
+      rect {
+        fill: transparent;
+      }
+    }
+  </style><rect x="40" y="40" width="430" height="430" ry="215" fill="#fff"/><path d="m256 0c-141.41 0-256 114.59-256 256s114.59 256 256 256 256-114.59 256-256-114.59-256-256-256zm0 48c115.65 0 208 92.353 208 208s-92.353 208-208 208-208-92.353-208-208 92.353-208 208-208zm-96 80a32 32 0 0 0-32 32 32 32 0 0 0 32 32h160c18.282 0 32 13.718 32 32s-13.718 32-32 32h-32v64h32c52.63 0 96-43.37 96-96s-43.37-96-96-96h-160zm0 128v32 64 32a32 32 0 0 0 32 32 32 32 0 0 0 32-32v-64-32-32h-64z" fill="#003f7d" stop-color="#000000" stroke-linecap="square"/></svg>

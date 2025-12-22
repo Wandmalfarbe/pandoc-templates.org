@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+	  <style>
+    @media (prefers-color-scheme: dark) {
+      path, rect {
+        stroke: white;
+        fill: transparent
+      }
+    }
+  </style><rect x="40" y="40" width="430" height="430" ry="215" fill="#fff"/><g fill="none" stroke="#003f7d"><path d="m192 288v64" stroke-linecap="square" stroke-width="64"/><path d="m192 320v64" stroke-linecap="round" stroke-linejoin="round" stroke-width="64"/><g stroke-linejoin="bevel" stroke-width="64"><path d="m320 160c35.456 0 64 28.544 64 64s-28.544 64-64 64"/><path d="m160 160h160" stroke-linecap="round"/><path d="m288 288h32"/></g><rect x="24" y="24" width="464" height="464" rx="237.88" ry="237.88" stroke-linecap="round" stroke-linejoin="round" stroke-width="48"/></g></svg>
