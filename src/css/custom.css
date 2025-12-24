@@ -2,7 +2,8 @@
  * Customize Bootstrap to make the light mode WCAG AAA conforming
  */
 :root {
-    --bs-border-radius: 0;
+    --bs-border-radius: 5px;
+    --bs-border-width: 2px;
 }
 
 [data-bs-theme="light"] {
@@ -77,10 +78,6 @@
  */
 .filter {
     background: rgba(var(--bs-tertiary-bg-rgb), var(--bs-bg-opacity));
-}
-
-.col-formats {
-    overflow: scroll;
 }
 
 /*
@@ -171,4 +168,11 @@ a.invisible-link,
 a.invisible-link:hover {
     text-decoration: inherit;
     color: inherit;
+}
+
+/**
+ * Form Control
+ */
+.form-control, .form-select {
+    --bs-border-color: #bfbfbf;
 }

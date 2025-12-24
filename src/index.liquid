@@ -15,7 +15,7 @@ tags: sitemap
        data-document-types="{% for doc in template.document_types %}{{ doc }} {% endfor %}"
        itemscope
        itemtype="https://schema.org/SoftwareSourceCode">
-    <div class="card shadow-sm">
+    <div class="card">
         <a class="ratio ratio-A4" href="template/{{ template.id }}">
           {% if template.images[0].file %}
             <!-- https://github.com/twbs/bootstrap/issues/32991 -->

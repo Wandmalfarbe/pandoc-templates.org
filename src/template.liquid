@@ -66,8 +66,8 @@ eleventyComputed:
                 </div>
             </div>
         </div>
-        <div class="col-12 col-md-4">
-
+        <aside class="col-12 col-md-4">
+            <h2 class="mt-4 mt-md-0">About</h2>
             <ul class="list-group list-group-flush small">
                 <li class="list-group-item ps-0 pe-0 text-body-secondary d-flex justify-content-between align-items-center">
                     <span class="fw-semibold me-2">
@@ -135,7 +135,7 @@ eleventyComputed:
                     </li>
                 {% endif %}
             </ul>
-        </div>
+        </aside>
     </div>
 
     {% if template.images and template.images[0] %}
@@ -162,23 +162,26 @@ eleventyComputed:
     {% endif %}
 
     {% if template.github_repository_releases_json and template.github_repository_releases_json[0] %}
-        {% assign release = template.github_repository_releases_json[0] %}
-        <h2>Latest Version</h2>
-        <div class="card">
-            <div class="card-body">
-                <div class="d-flex justify-content-between align-items-center gap-2">
-                    <a class="invisible-link" href="{{ release.html_url }}">
-                        <h4 class="card-title d-inline-block">{{ release.name }}</h4>
-                    </a>
-                    <div>
-                        <span class="badge text-bg-success ms-2"><i class="bi-tag"></i> Latest</span>
-                        <span class="badge text-bg-secondary ms-2"><i class="bi-tag"></i> {{ release.tag_name }}</span>
-                    </div>
-                </div>
-                <span class="card-subtitle mb-2 text-body-secondary">{{ release.published_at | dateToHumanReadableMedium }}</span>
-                <span class="card-subtitle mb-2 {{ release.published_at | cssClassTimeAgo }}">({{ release.published_at | timeAgo }})</span><br>
-                <a href="{{ release.html_url }}" class="btn btn-outline-secondary mt-3">Release on GitHub</a>
-            </div>
-        </div>
+        <h2>Releases <small class="text-secondary fw-light">({{ template.github_repository_releases_json.size}})</small></h2>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                  <th scope="col">Name</th>
+                  <th scope="col">Version</th>
+                  <th scope="col">Release Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for releasex in template.github_repository_releases_json %}
+                <tr>
+                    <td><a href="{{ releasex.html_url }}">{% if releasex.name and releasex.name != "" %}{{ releasex.name }}{% else %}{{ releasex.tag_name }}{% endif %}{% if releasex.draft %} <span class="badge text-bg-secondary rounded-pill">Draft</span>{% endif %}{% if releasex.prerelease %} <span class="badge text-bg-warning rounded-pill">Pre-release</span>{% endif %}</a></td>
+                    <td>{{ releasex.tag_name }}</td>
+                    <td>
+                        <span class="{{ releasex.created_at | cssClassTimeAgo }}">{{ releasex.created_at | dateToHumanReadableMedium }}</span>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
     {% endif %}
 {% endif %}

@@ -3,11 +3,11 @@
 
 {% include "partials/navbar" %}
 
-<div class="container my-4" itemscope itemtype="https://schema.org/SoftwareSourceCode">
+<main class="container my-4" id="main" itemscope itemtype="https://schema.org/SoftwareSourceCode">
     {% include "partials/breadcrumb" %}
 
     {{ content | raw }}
-</div>
+</main>
 
 {% include "partials/footer" %}
 
