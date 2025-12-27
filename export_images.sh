@@ -7,8 +7,8 @@ inkscape_bin="/Applications/Inkscape.app/Contents/MacOS/inkscape"
 
 "${inkscape_bin}" "src/favicon.svg" --export-type png --export-filename "src/favicon.png" --export-width 256
 "${inkscape_bin}" "src/favicon.svg" --export-type png --export-filename "icon.png" --export-width 256
-"${inkscape_bin}" "src/favicon.svg" --export-type png --export-filename "src/apple-touch-icon-180.png" --export-width 180
-"${inkscape_bin}" "src/favicon.svg" --export-type png --export-filename "src/apple-touch-icon.png" --export-width 256
+"${inkscape_bin}" "src/apple-touch-icon.svg" --export-type png --export-filename "src/apple-touch-icon-180.png" --export-width 180
+"${inkscape_bin}" "src/apple-touch-icon.svg" --export-type png --export-filename "src/apple-touch-icon.png" --export-width 256
 
 # Don't use imagemagick to downscale the images because they are more crisp when exporting from Inkscape.
 "${inkscape_bin}" "src/favicon.svg" --export-type png --export-filename "src/favicon-16.png" --export-width 16
