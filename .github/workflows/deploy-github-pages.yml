@@ -7,6 +7,7 @@ on:
   push:
     branches:
       - main
+  pull_request:
 
 permissions:
   contents: read
@@ -27,26 +28,29 @@ jobs:
           node-version: '22'
 
       - name: install dependencies
-        run: npm install
+        run: npm ci
 
       - name: build project
         run: npm run build
         env:
           GH_ACCESS_TOKEN: ${{ secrets.GH_ACCESS_TOKEN }}
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./dist
-
   deploy:
+    # Run deploy only on main push or scheduled run
+    if: (github.event_name == 'push' && github.ref == 'refs/heads/main') || github.event_name == 'schedule'
     needs: build
     runs-on: ubuntu-latest
+
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./dist
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
