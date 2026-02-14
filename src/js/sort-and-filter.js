@@ -1,8 +1,10 @@
-const Shuffle = window.Shuffle;
+// Build mjs Shuffle with the global name Shuffle "npx esbuild shuffle.mjs --minify --bundle --outfile=shuffle.js --format=iife --global-name=Shuffle"
+// and expose the default exported module as Shuffle2.
+const Shuffle2 = Shuffle.default;
 
 const element = document.getElementById('gallery');
-const shuffleInstance = new Shuffle(element, {
-    filterMode: Shuffle.FilterMode.ALL,
+const shuffleInstance = new Shuffle2(element, {
+    filterMode: Shuffle2.FilterMode.ALL,
     delimiter: ",",
     itemSelector: '.col',
     sizer: '.sizer',
@@ -115,7 +117,7 @@ function handleFilter() {
         return containsSearchedText && hasFormats && hasDocumentTypes;
     });
 
-    shuffleInstance.on(Shuffle.EventType.LAYOUT, (data) => {
+    shuffleInstance.on(Shuffle2.EventType.LAYOUT, (data) => {
         document.getElementById("filtered-items").innerHTML = data.shuffle.visibleItems;
     });
 }
