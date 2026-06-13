@@ -743,6 +743,50 @@
     ],
     "github_repository": "wushanyun64/SmartResume"
   },
+    {
+    "id": "pandokoma",
+    "title": "Pandokoma",
+    "authors": [
+      {
+        "name": "Julien Dutant",
+        "github": {
+          "username": "jdutant"
+        }
+      }
+    ],
+    "description": "Pandokoma is a powerful and versatile KOMA-Script template for pandoc. It provides control for a large subset of the KOMA-Script classes features directly from a source document's metadata.",
+    "formats": [
+      "latex",
+      "pdf"
+    ],
+    "document_types": [
+      "article",
+      "book",
+      "dissertation_thesis"
+    ],
+    "tags": [
+      "KOMA-Script"
+    ],
+    "images": [
+      {
+        "file": "example-custom.png",
+        "title": "Custom example with Fira as a font family and custom headers and footers."
+      },
+      {
+        "file": "example-oldstyle.png",
+        "title": "Oldstyle example"
+      },
+      {
+        "file": "example-plain.png",
+        "title": "Plain example"
+      },
+      {
+        "file": "example-proofmode.png",
+        "title": "Proofmode example"
+      }
+    ],
+    "github_repository": "dialoa/pandokoma"
+  },
   {
     "id": "obsidian-htmlexport",
     "title": "obsidian-htmlexport",
