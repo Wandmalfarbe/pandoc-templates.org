@@ -1119,6 +1119,49 @@
     "github_repository": "crsh/papaja"
   },
   {
+    "id": "technical-markdown",
+    "title": "Technical Markdown",
+    "authors": [
+      {
+        "name": "Gabriel Nützi",
+        "github": {
+          "username": "gabyx"
+        }
+      }
+    ],
+    "description": "A comprehensive pandoc-based authoring environment for creating technical reports, theses, papers, and other long-form documents from Markdown. It provides an automated build pipeline using Gradle, pandoc, LaTeX, and custom filters to continuously generate HTML and PDF output with cross-references, citations, and advanced styling. The project also includes Docker and VS Code integrations.",
+    "formats": [
+      "pdf",
+      "html"
+    ],
+    "document_types": [
+      "article",
+      "book",
+      "paper",
+      "dissertation_thesis"
+    ],
+    "tags": [
+      "Docker",
+      "Visual Studio Code",
+      "Gradle"
+    ],
+    "images": [
+      {
+        "file": "technical-markdown-pdf-title-page.png",
+        "title": "PDF Title page"
+      },
+      {
+        "file": "technical-markdown-html.png",
+        "title": "HTML"
+      },
+      {
+        "file": "technical-markdown-html-sidebar.png",
+        "title": "HTML with open sidebar"
+      }
+    ],
+    "github_repository": "gabyx/Technical-Markdown"
+  },
+  {
     "id": "pandoc-bootstrap-adaptive-template",
     "title": "pandoc bootstrap adaptive template",
     "authors": [
