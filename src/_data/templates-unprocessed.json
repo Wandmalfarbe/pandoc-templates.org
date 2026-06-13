@@ -1068,6 +1068,57 @@
     "github_repository": "StefanoCecere/markdown_pandoc_book_template"
   },
   {
+    "id": "papaja",
+    "title": "papaja",
+    "subtitle": "Preparing APA Journal Articles",
+    "authors": [
+      {
+        "name": "Frederik Aust",
+        "github": {
+          "username": "crsh"
+        }
+      },
+      {
+        "name": "Marius Barth",
+        "github": {
+          "username": "mariusbarth"
+        }
+      }
+    ],
+    "description": "papaja (Preparing APA Journal Articles) is an R package that provides document formats to produce complete APA manuscripts from R Markdown-files (PDF and Word documents) and helper functions that facilitate reporting statistics, tables, and plots.",
+    "formats": [
+      "latex",
+      "pdf",
+      "docx"
+    ],
+    "document_types": [
+      "article",
+      "paper"
+    ],
+    "tags": [
+      "APA Journal",
+      "R Markdown",
+      "apa6"
+    ],
+    "images": [
+      {
+        "file": "title-page.png",
+        "title": "Title page"
+      },
+      {
+        "file": "table.png",
+        "title": "Table"
+      },
+      {
+        "file": "figures.png",
+        "title": "Figures"
+      }
+    ],
+    "icon": "papaja-logo-hex.png",
+    "website": "https://frederikaust.com/papaja_man/",
+    "github_repository": "crsh/papaja"
+  },
+  {
     "id": "pandoc-bootstrap-adaptive-template",
     "title": "pandoc bootstrap adaptive template",
     "authors": [
