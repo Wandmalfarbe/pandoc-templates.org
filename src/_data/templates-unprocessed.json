@@ -1162,6 +1162,51 @@
     "github_repository": "gabyx/Technical-Markdown"
   },
   {
+    "id": "wg21",
+    "title": "wg21",
+    "subtitle": "Framework for Writing C++ Committee Papers",
+    "authors": [
+      {
+        "name": "Michael Park",
+        "github": {
+          "username": "mpark"
+        }
+      }
+    ],
+    "description": "This is a paper-writing framework designed to ease the pain of authoring papers for WG21, built on top of pandoc. In short, you write your papers in Markdown and the framework produces the paper either in HTML or PDF.",
+    "formats": [
+      "pdf",
+      "html"
+    ],
+    "document_types": [
+      "article",
+      "paper"
+    ],
+    "tags": [
+      "C++",
+      "Framework"
+    ],
+    "images": [
+      {
+        "file": "title-page-and-table-of-contents.png",
+        "title": "Title page and table of contents"
+      },
+      {
+        "file": "revision-history-and-content.png",
+        "title": "Revision history and content"
+      },
+      {
+        "file": "before-after-comparison.png",
+        "title": "Before/after comparison"
+      },
+      {
+        "file": "references.png",
+        "title": "References"
+      }
+    ],
+    "github_repository": "mpark/wg21"
+  },
+  {
     "id": "pandoc-bootstrap-adaptive-template",
     "title": "pandoc bootstrap adaptive template",
     "authors": [
