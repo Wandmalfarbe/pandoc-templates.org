@@ -1683,6 +1683,97 @@
     "github_repository": "agustinuslaw/din5008_template"
   },
   {
+    "id": "quarto-cnam-thesis",
+    "title": "quarto-cnam-thesis",
+    "authors": [
+      {
+        "name": "Éric Bavu",
+        "github": {
+          "username": "zinc75"
+        }
+      }
+    ],
+    "description": "A Quarto extension for writing a doctoral thesis at the Conservatoire national des arts et métiers (Cnam). Produces a PDF that conforms to the official Cnam 2024–2025 template and a navigable HTML version for online sharing and accessibility. The PDF document complies with PDF/A-1b validation requirements. The template also supports chapter mini-tables of contents, a bibliography in IEEE style and optional glossaries and acronyms.",
+    "formats": [
+      "latex",
+      "pdf",
+      "html"
+    ],
+    "document_types": [
+      "dissertation_thesis"
+    ],
+    "tags": [
+      "Quarto",
+      "PDF/A",
+      "glossary",
+      "acronyms"
+    ],
+    "images": [
+      {
+        "file": "pdf-title-page.png",
+        "title": "PDF title page"
+      },
+      {
+        "file": "pdf-introduction-page.png",
+        "title": "PDF introduction page"
+      },
+      {
+        "file": "pdf-chapter-page.png",
+        "title": "PDF chapter page"
+      },
+      {
+        "file": "pdf-comments-annotations.png",
+        "title": "PDF Comments/Annotations"
+      },
+      {
+        "file": "pdf-images.png",
+        "title": "PDF images"
+      },
+      {
+        "file": "pdf-math.png",
+        "title": "PDF math"
+      },
+      {
+        "file": "pdf-tables.png",
+        "title": "PDF tables"
+      },
+      {
+        "file": "pdf-bibliography.png",
+        "title": "PDF bibliography"
+      },
+      {
+        "file": "html-title.png",
+        "title": "HTML title"
+      },
+      {
+        "file": "html-introduction.png",
+        "title": "HTML introduction"
+      },
+      {
+        "file": "html-chapter.png",
+        "title": "HTML chapter"
+      },
+      {
+        "file": "html-comments-annotations.png",
+        "title": "HTML Comments/Annotations"
+      },
+      {
+        "file": "html-images.png",
+        "title": "HTML images"
+      },
+      {
+        "file": "html-math.png",
+        "title": "HTML math"
+      },
+      {
+        "file": "html-tables.png",
+        "title": "HTML tables"
+      }
+    ],
+    "website": "https://zinc75.github.io/quarto-cnam-thesis/",
+    "github_repository": "zinc75/quarto-cnam-thesis"
+  },
+  {
     "id": "nih-grant-proposal-template",
     "title": "NIH Grant Proposal Template",
     "authors": [
