@@ -467,6 +467,57 @@
     "github_repository": "johnpaulada/pandoc-markdown-book-template"
   },
   {
+    "id": "ats-safe-resume",
+    "title": "ATS Safe Resume",
+    "authors": [
+      {
+        "name": "Dennis Kim",
+        "github": {
+          "username": "denniyahh"
+        }
+      }
+    ],
+    "description": "A modern, programmatic resume template that produces clean PDFs that pass applicant tracking systems — without sacrificing design. Edit one Markdown file. Get PDF, DOCX, HTML, plain text, and JSON Resume output. Zero-install path available via GitHub Actions. Automated LinkedIn profile sync.",
+    "formats": [
+      "pdf",
+      "docx",
+      "html"
+    ],
+    "document_types": [
+      "cv_resume"
+    ],
+    "tags": [
+      "ATS",
+      "Typst",
+      "Docker",
+      "LinkedIn",
+      "GitHub Actions"
+    ],
+    "images": [
+      {
+        "file": "pdf-resume-with-typst.png",
+        "title": "PDF resume produced with Typst"
+      },
+      {
+        "file": "pdf-resume-with-latex-eisvogel.png",
+        "title": "PDF resume produced with the Eisvogel LaTeX template"
+      },
+      {
+        "file": "html-resume-print-dialog.png",
+        "title": "HTML resume produced via the browser print dialog"
+      },
+      {
+        "file": "html-resume.png",
+        "title": "HTML resume"
+      },
+      {
+        "file": "docx-resume.png",
+        "title": "DOCX resume"
+      }
+    ],
+    "github_repository": "denniyahh/ats_safe_resume"
+  },
+  {
     "id": "academic-pandoc-template",
     "title": "academic-pandoc-template",
     "authors": [
