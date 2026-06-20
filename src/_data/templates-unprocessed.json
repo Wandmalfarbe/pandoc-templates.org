@@ -1693,12 +1693,24 @@
     ],
     "images": [
       {
-        "file": "pdf-output-example.png",
-        "title": "PDF Output Example: Custom LaTeX template (template.tex) used for PDF generation."
+        "file": "pdf-resume.png",
+        "title": "PDF resume via LaTeX"
       },
       {
-        "file": "html-output-example.png",
-        "title": "HTML Output Example: Responsive web design, custom background, and div settings with style.css. Automatically generated 'table of contents' transformed into a menu bar with dropdown subsections. Longer content sections are hidden and revealed on mouseover (or with a single-tap on mobile)."
+        "file": "html-resume-landscape-dark.png",
+        "title": "HTML resume landscape (dark mode): Responsive web design, custom background, and div settings with style.css. Automatically generated 'table of contents' transformed into a menu bar with dropdown subsections. Longer content sections are hidden and revealed on mouseover (or with a single-tap on mobile)."
+      },
+      {
+        "file": "html-resume-landscape-light.png",
+        "title": "HTML resume landscape (light mode)"
+      },
+      {
+        "file": "html-resume-portrait-dark.png",
+        "title": "HTML resume portrait (dark mode)"
+      },
+      {
+        "file": "html-resume-portrait-light.png",
+        "title": "HTML resume portrait (light mode)"
       }
     ],
     "github_repository": "kj-sh604/pandoc-resume"
