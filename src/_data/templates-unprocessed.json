@@ -1653,6 +1653,36 @@
     "github_repository": "kj-sh604/pandoc-resume"
   },
   {
+    "id": "din5008-template",
+    "title": "din5008_template",
+    "authors": [
+      {
+        "name": "agustinuslaw",
+        "github": {
+          "username": "agustinuslaw"
+        }
+      }
+    ],
+    "description": "A LaTeX template for creating documents that follow the DIN 5008 standard, which is commonly used for formatting business letters in Germany. It provides a starting point for writing letters with the correct layout and formatting rules.",
+    "formats": [
+      "latex",
+      "pdf"
+    ],
+    "document_types": [
+      "letter"
+    ],
+    "tags": [
+      "DIN 5008"
+    ],
+    "images": [
+      {
+        "file": "din5008-letter.png",
+        "title": "An example letter"
+      }
+    ],
+    "github_repository": "agustinuslaw/din5008_template"
+  },
+  {
     "id": "nih-grant-proposal-template",
     "title": "NIH Grant Proposal Template",
     "authors": [
